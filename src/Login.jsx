@@ -14,7 +14,7 @@ const Login = () => {
   return (
     <div className={styles.loginContainer}>
       <div className={styles.loginBox}>
-        <img src="/src/assets/logo.png" alt="Logo" className={styles.logo} />
+        <img src="/src/assets/mainlogo.png" alt="Logo" className={styles.logo} />
         <form onSubmit={handleLogin}>
           <input
             type="text"
