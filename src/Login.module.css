@@ -1,0 +1,132 @@
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+    font-family: "Inter-Regular", sans-serif;
+    color: #bdbdbd;
+  }
+  
+  .loginBox {
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    width: 400px;
+  }
+  
+  .logo {
+    width: 150px;
+    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
+    margin-bottom: 80px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input {
+    height: 35px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 32px;
+    box-shadow: inset -1px 2px 4px -2px rgba(0, 0, 0, 0.08)
+  }
+
+  .input:focus {
+    outline: none;
+  }
+  
+  .loginButton {
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #FF702A;
+    color: white;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+  }
+
+  .loginButton:focus {
+    outline: none;
+  }
+  
+  .keepLoggedIn {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .keepLoggedIn input {
+    margin-right: 5px;
+  }
+  
+  .checkbox {
+    display: none; 
+  }
+  
+  .checkbox + label {
+    background: url('src/assets/unchecked.svg') no-repeat;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .checkbox:checked + label {
+    background: url('src/assets/checked.svg') no-repeat;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+    color: #BDBDBD;
+    margin-bottom: 20px;
+  }
+
+  .links a {
+    color: #BDBDBD;
+    text-decoration: none;
+  }
+
+  .links a:hover {
+    color: #FF702A;
+  }
+  
+  .snsLogin {
+    margin-top: 20px;
+  }
+  
+  .snsButtons {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .snsButton {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .snsButton:focus {
+    outline: none;
+  }
+  
+  .snsButton1 { /* SNS 버튼 1 */ }
+  .snsButton2 { /* SNS 버튼 2 */ }
+  .snsButton3 { /* SNS 버튼 3 */ }
+  
