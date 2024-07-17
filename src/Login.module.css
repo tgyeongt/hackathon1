@@ -115,19 +115,29 @@
   }
   
   .snsButton {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: #ddd;
     border: none;
     cursor: pointer;
+    background-size: cover;
+    background-position: center;
   }
   
   .snsButton:focus {
     outline: none;
   }
   
-  .snsButton1 { /* SNS 버튼 1 */ }
-  .snsButton2 { /* SNS 버튼 2 */ }
-  .snsButton3 { /* SNS 버튼 3 */ }
+  .snsButton1 { 
+    background-image: url('/src/assets/g-logo.png');
+  }
+
+  .snsButton2 { 
+    background-image: url('/src/assets/n-logo.png');
+  }
+
+  .snsButton3 { 
+    background-image: url('/src/assets/k-logo.png');
+  }
   
