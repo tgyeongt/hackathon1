@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Login.module.css'; 
+import logo from'./assets/logo.png';
 
 const Login = () => {
   const [id, setId] = useState('');
@@ -14,7 +15,7 @@ const Login = () => {
   return (
     <div className={styles.loginContainer}>
       <div className={styles.loginBox}>
-        <img src="/src/assets/logo.png" alt="logo" className={styles.logo} />
+        <img src={logo} alt="logo" className={styles.logo} />
         <form onSubmit={handleLogin}>
           <input
             type="text"
