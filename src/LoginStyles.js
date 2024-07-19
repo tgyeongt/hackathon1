@@ -67,6 +67,10 @@ export const KeepLoggedIn = styled.div`
 
 export const Checkbox = styled.input`
   display: none;
+
+  &:checked + label {
+    background: url('/src/assets/checked.svg') no-repeat;
+  }
 `;
 
 export const CheckboxLabel = styled.label`
@@ -76,10 +80,6 @@ export const CheckboxLabel = styled.label`
   display: inline-block;
   cursor: pointer;
   margin-right: 5px;
-
-  ${Checkbox}:checked + & {
-    background: url('/src/assets/checked.svg') no-repeat;
-  }
 `;
 
 export const Links = styled.div`
