@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import styles from './Login.module.css'; 
-import logo from'/src/assets/logo.png';
+import {
+  LoginContainer, LoginBox, Logo, Form, Input, LoginButton, KeepLoggedIn, Checkbox, CheckboxLabel, Links, SnsLogin, SnsButtons, SnsButton
+} from './LoginStyles';
+import logo from '/src/assets/logo.png';
 
 const Login = () => {
   const [id, setId] = useState('');
@@ -13,54 +15,51 @@ const Login = () => {
   };
 
   return (
-    <div className={styles.loginContainer}>
-      <div className={styles.loginBox}>
-        <img src={logo} alt="logo" className={styles.logo} />
-        <form onSubmit={handleLogin}>
-          <input
+    <LoginContainer>
+      <LoginBox>
+        <Logo src={logo} alt="logo" />
+        <Form onSubmit={handleLogin}>
+          <Input
             type="text"
             placeholder="아이디"
             value={id}
             onChange={(e) => setId(e.target.value)}
-            className={styles.input}
           />
-          <input
+          <Input
             type="password"
             placeholder="비밀번호"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className={styles.input}
           />
-          <button type="submit" className={styles.loginButton}>로그인</button>
-          <div className={styles.keepLoggedIn}>
-            <input
+          <LoginButton type="submit">로그인</LoginButton>
+          <KeepLoggedIn>
+            <Checkbox
               type="checkbox"
               id="keepLoggedIn"
               checked={keepLoggedIn}
               onChange={(e) => setKeepLoggedIn(e.target.checked)}
-              className={styles.checkbox}
             />
-            <label htmlFor="keepLoggedIn"></label>
-            <label>로그인 상태 유지</label>
-          </div>
-          <div className={styles.links}>
+            <CheckboxLabel htmlFor="keepLoggedIn" />
+            <span>로그인 상태 유지</span>
+          </KeepLoggedIn>
+          <Links>
             <a href="/find-id">아이디 찾기</a>
             <span> | </span>
             <a href="/find-password">비밀번호 찾기</a>
             <span> | </span>
             <a href="/signup">회원가입</a>
-          </div>
-          <div className={styles.snsLogin}>
+          </Links>
+          <SnsLogin>
             <span>SNS로 로그인하기</span>
-            <div className={styles.snsButtons}>
-              <button className={`${styles.snsButton} ${styles.snsButton1}`}></button>
-              <button className={`${styles.snsButton} ${styles.snsButton2}`}></button>
-              <button className={`${styles.snsButton} ${styles.snsButton3}`}></button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
+            <SnsButtons>
+              <SnsButton className="snsButton1" />
+              <SnsButton className="snsButton2" />
+              <SnsButton className="snsButton3" />
+            </SnsButtons>
+          </SnsLogin>
+        </Form>
+      </LoginBox>
+    </LoginContainer>
   );
 };
 
