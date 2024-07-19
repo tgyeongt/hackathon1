@@ -70,7 +70,7 @@ export const KeepLoggedIn = styled.div`
   margin-bottom: 20px;
 `;
 
-xport const Checkbox = styled.input`
+export const Checkbox = styled.input`
   display: none;
 
   &:checked + label {
