@@ -70,16 +70,16 @@ export const KeepLoggedIn = styled.div`
   margin-bottom: 20px;
 `;
 
-export const Checkbox = styled.input.attrs({ type: 'checkbox' })`
+export const Checkbox = styled.input`
   display: none;
 
   &:checked + label {
-    background-image: url(${checkedImg});
+    background-image: url(${checkedImg}) no-repeat;
   }
 `;
 
 export const CheckboxLabel = styled.label`
-  background-image: url(${uncheckedImg});
+  background-image: url(${uncheckedImg}) no-repeat;
   width: 15px;
   height: 15px;
   display: inline-block;

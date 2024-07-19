@@ -34,6 +34,7 @@ const Login = () => {
           <LoginButton type="submit">로그인</LoginButton>
           <KeepLoggedIn>
             <Checkbox
+              type="checkbox"
               id="keepLoggedIn"
               checked={keepLoggedIn}
               onChange={(e) => setKeepLoggedIn(e.target.checked)}
