@@ -85,6 +85,10 @@ export const CheckboxLabel = styled.label`
   display: inline-block;
   cursor: pointer;
   margin-right: 5px;
+
+  &:checked + label {
+  background-image: url(${checkedImg});
+  }
 `;
 
 export const Links = styled.div`
