@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import uncheckedImg from '/src/assets/unchecked.svg';
-import checkedImg from '/src/assets/checked.svg';
+import uncheckedImg from '/src/assets/unchecked.png';
+import checkedImg from '/src/assets/checked.png';
 import googleLogo from '/src/assets/g-logo.png';
 import naverLogo from '/src/assets/n-logo.png';
 import kakaoLogo from '/src/assets/k-logo.png';
@@ -70,7 +70,7 @@ export const KeepLoggedIn = styled.div`
   margin-bottom: 20px;
 `;
 
-export const Checkbox = styled.input.attrs({ type: 'checkbox' })`
+export const Checkbox = styled.input`
   display: none;
 
   &:checked + label {
