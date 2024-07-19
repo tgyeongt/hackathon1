@@ -1,4 +1,9 @@
 import styled from 'styled-components';
+import uncheckedImg from '/src/assets/unchecked.svg';
+import checkedImg from '/src/assets/checked.svg';
+import googleLogo from '/src/assets/g-logo.png';
+import naverLogo from '/src/assets/n-logo.png';
+import kakaoLogo from '/src/assets/k-logo.png';
 
 export const LoginContainer = styled.div`
   display: flex;
@@ -65,16 +70,16 @@ export const KeepLoggedIn = styled.div`
   margin-bottom: 20px;
 `;
 
-export const Checkbox = styled.input`
+xport const Checkbox = styled.input`
   display: none;
 
   &:checked + label {
-    background: url('/src/assets/checked.svg') no-repeat;
+    background: url(${checkedImg}) no-repeat;
   }
 `;
 
 export const CheckboxLabel = styled.label`
-  background: url('/src/assets/unchecked.svg') no-repeat;
+  background: url(${uncheckedImg}) no-repeat;
   width: 15px;
   height: 15px;
   display: inline-block;
@@ -119,15 +124,15 @@ export const SnsButton = styled.button`
   background-position: center;
 
   &.snsButton1 {
-    background-image: url('/src/assets/g-logo.png');
+    background-image: url(${googleLogo});
   }
 
   &.snsButton2 {
-    background-image: url('/src/assets/n-logo.png');
+    background-image: url(${naverLogo});
   }
 
   &.snsButton3 {
-    background-image: url('/src/assets/k-logo.png');
+    background-image: url(${kakaoLogo});
   }
 
   &:focus {
