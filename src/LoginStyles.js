@@ -74,12 +74,12 @@ export const Checkbox = styled.input`
   display: none;
 
   &:checked + label {
-    background: url(${checkedImg}) no-repeat;
+    background-image: url(${checkedImg});
   }
 `;
 
 export const CheckboxLabel = styled.label`
-  background: url(${uncheckedImg}) no-repeat;
+  background-image: url(${uncheckedImg});
   width: 15px;
   height: 15px;
   display: inline-block;
