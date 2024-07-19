@@ -70,7 +70,7 @@ export const KeepLoggedIn = styled.div`
   margin-bottom: 20px;
 `;
 
-export const Checkbox = styled.input`
+export const Checkbox = styled.input.attrs({ type: 'checkbox' })`
   display: none;
 
   &:checked + label {
@@ -85,10 +85,6 @@ export const CheckboxLabel = styled.label`
   display: inline-block;
   cursor: pointer;
   margin-right: 5px;
-
-  &:checked + label {
-  background-image: url(${checkedImg});
-  }
 `;
 
 export const Links = styled.div`
