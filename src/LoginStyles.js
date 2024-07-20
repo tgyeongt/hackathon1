@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import uncheckedImg from '/unchecked.svg';
-import checkedImg from '/checked.svg';
+import uncheckedImg from "/src/assets/unchecked.svg";
+import checkedImg from "/src/assets/checked.svg";
 import googleLogo from '/src/assets/g-logo.png';
 import naverLogo from '/src/assets/n-logo.png';
 import kakaoLogo from '/src/assets/k-logo.png';
@@ -74,12 +74,12 @@ export const Checkbox = styled.input`
   display: none;
 
   &:checked + label {
-    background: url(${checkedImg}) no-repeat;
+    background: url("${checkedImg}") no-repeat;
   }
 `;
 
 export const CheckboxLabel = styled.label`
-  background: url(${uncheckedImg}) no-repeat;
+  background: url("${uncheckedImg}") no-repeat;
   width: 15px;
   height: 15px;
   display: inline-block;
