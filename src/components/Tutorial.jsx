@@ -32,8 +32,7 @@ const Tutorial = () => {
           <NavOption
             key={option}
             active={selectedNav === option}
-            onClick={() => handleNavClick(option)}
-          >
+            onClick={() => handleNavClick(option)}>
             {option}
           </NavOption>
         ))}
