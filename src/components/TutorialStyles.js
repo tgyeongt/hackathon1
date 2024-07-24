@@ -21,10 +21,9 @@ export const TutorialContainer = styled.div`
 export const TutorialHeader = styled.div`
   width: 100%;
   height: 90px;
-  background-image: url(${header});
+  background-image: url("${header}");
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
 `;
