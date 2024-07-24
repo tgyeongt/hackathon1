@@ -54,7 +54,7 @@ export const NavOption = styled.div`
   padding: 10px;
   cursor: pointer;
   font-weight: bold;
-  color: ${props => (props.active ? 'orange' : 'black')};
+  color: ${props => (props.active ? '#FF3E00' : '#C9C9C9')};
   
   ${props =>
     props.active &&
@@ -65,7 +65,7 @@ export const NavOption = styled.div`
         margin: 0 auto;
         width: 50%;
         padding-top: 10px;
-        border-bottom: 2px solid orange;
+        border-bottom: 2px solid #FF3E00;
         animation: slide 0.3s ease-out;
       }
     `}
@@ -84,7 +84,7 @@ export const ExerciseCard = styled.div`
   height: 224px;
   background-color: #FFFFFF;
   cursor: pointer;
-  background-size: cover;
+  background-size: 400px 224px;
   background-position: center;
   position: relative;
 
