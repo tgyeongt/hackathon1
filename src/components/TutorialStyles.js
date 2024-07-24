@@ -20,7 +20,7 @@ export const TutorialContainer = styled.div`
 
 export const TutorialHeader = styled.div`
   width: 500px;
-  height: 90px;
+  height: 10%;
   background-image: url(${header});
   background-size: 500px 90px;
   background-repeat: no-repeat;
