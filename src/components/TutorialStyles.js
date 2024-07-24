@@ -49,14 +49,17 @@ export const NavBar = styled.div`
   width: 100%;
   margin-bottom: 20px;
   position: relative;
-`;
-
-const slideIn = keyframes`
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
+  border-bottom: 2px solid #C9C9C9; /* 수정된 부분 */
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: ${props => `calc(${props.activeIndex} * 20%)`}; /* 수정된 부분 */
+    width: 20%; /* 수정된 부분 */
+    height: 2px; /* 수정된 부분 */
+    background-color: #FF3E00; /* 수정된 부분 */
+    transition: left 0.3s ease-out; /* 수정된 부분 */
   }
 `;
 
@@ -66,20 +69,6 @@ export const NavOption = styled.div`
   font-weight: bold;
   color: ${props => (props.active ? '#FF3E00' : '#C9C9C9')};
   position: relative;
-
-  ${props =>
-    props.active &&
-    css`
-      &::after {
-        content: '';
-        display: block;
-        margin: 0 auto;
-        width: ${props => (props.active ? '100%' : '0')};
-    padding-top: 10px;
-    border-bottom: 2px solid #FF3E00;
-    animation: ${props => (props.active ? slideIn : 'none')} 0.3s ease-out;
-      }
-    `}
 `;
 
 export const ExerciseList = styled.div`

@@ -22,13 +22,16 @@ const Tutorial = () => {
     });
   };
 
+  const navOptions = ['전체', '하체', '상체', '코어', '스트레칭'];
+  const activeIndex = navOptions.indexOf(selectedNav);
+
   return (
     <TutorialContainer>
       <TutorialHeader>
         <BackButton />
       </TutorialHeader>
-      <NavBar>
-        {['전체', '하체', '상체', '코어', '스트레칭'].map(option => (
+      <NavBar activeIndex={activeIndex}>
+        {navOptions.map(option => (
           <NavOption
             key={option}
             active={selectedNav === option}
