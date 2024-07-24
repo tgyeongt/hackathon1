@@ -105,7 +105,7 @@ export const LikeButton = styled.button`
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 32px;
+  width: 20px;
   height: 20px;
   background-color: transparent;
   border: none;
@@ -116,8 +116,8 @@ export const LikeButton = styled.button`
   }
 
   img {
-    width: 100%;
-    height: 100%;
+    width: 14px;
+    height: 13px;
   }
 `;
 
