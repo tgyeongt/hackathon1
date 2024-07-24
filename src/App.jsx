@@ -1,8 +1,10 @@
-import Login from './Login';
+import Login from './components/Login';
+import Tutorial from './components/Tutorial';
 
 function App() {
   return (
-    <Login/>
+    // <Login/>
+    <Tutorial/>
   );
 }
 
