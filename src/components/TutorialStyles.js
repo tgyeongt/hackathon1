@@ -105,8 +105,8 @@ export const LikeButton = styled.button`
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 20px;
   background-color: transparent;
   border: none;
   cursor: pointer;

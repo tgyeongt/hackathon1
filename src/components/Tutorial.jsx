@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import {
   TutorialContainer, TutorialHeader, BackButton, NavBar, NavOption, ExerciseList, ExerciseCard, LikeButton,
 } from './TutorialStyles';
-import likeIcon from '/src/assets/emptyheart.svg';
-import likedIcon from '/src/assets/fullheart.svg';
+import likeIcon from '/src/assets/emptyheart.png';
+import likedIcon from '/src/assets/fullheart.png';
 
 const Tutorial = () => {
 
