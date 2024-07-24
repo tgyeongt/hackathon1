@@ -34,6 +34,8 @@ export const BackButton = styled.button`
   background-size: 20px 20px;
   background-color: transparent;
   border: none;
+  margin-top: 35px;
+  margin-left: 35px;
   
   &:focus {
     outline: none;
