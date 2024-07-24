@@ -21,7 +21,7 @@ export const TutorialContainer = styled.div`
 export const TutorialHeader = styled.div`
   width: 100%;
   height: 90px;
-  background-image: url("${header}");
+  background-image: url(${header});
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -31,7 +31,7 @@ export const TutorialHeader = styled.div`
 export const BackButton = styled.button`
   width: 20px;
   height: 20px;
-  background-image: url(${backbutton});
+  background-image: url("${backbutton}");
   background-size: 20px 20px;
   background-color: transparent;
   border: none;
