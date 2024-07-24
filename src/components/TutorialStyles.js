@@ -20,7 +20,7 @@ export const TutorialContainer = styled.div`
 
 export const TutorialHeader = styled.div`
   width: 500px;
-  height: 10%;
+  height: 90px;;
   background-image: url(${header});
   background-size: 500px 90px;
   background-repeat: no-repeat;
@@ -103,10 +103,11 @@ export const ExerciseCard = styled.div`
 
 export const LikeButton = styled.button`
   position: absolute;
+  top: 10px;
   right: 10px;
   width: 30px;
-  height: 46px;
-  background: none; 
+  height: 30px;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 
@@ -120,11 +121,20 @@ export const LikeButton = styled.button`
   }
 `;
 
-// @keyframes slide {
-//   0% {
-//     transform: translateX(-50%);
-//   }
-//   100% {
-//     transform: translateX(0);
-//   }
-// }
+export const ExerciseText = styled.div`
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+`;
+
+export const ExerciseTitle = styled.div`
+  font-size: 24px;
+  font-weight: bold;
+  color: orange;
+`;
+
+export const ExerciseDescription = styled.div`
+  font-size: 12px;
+`;
