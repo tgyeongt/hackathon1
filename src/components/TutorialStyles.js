@@ -1,9 +1,6 @@
 import styled, { css, keyframes } from 'styled-components';
 import header from '/src/assets/header.png';
 import backbutton from '/src/assets/backbutton.svg';
-import squat from '/src/assets/squat.png';
-import lunge from '/src/assets/lunge.png';
-import calfraise from '/src/assets/calfraise.png';
 
 export const TutorialContainer = styled.div`
   display: flex;
@@ -25,7 +22,7 @@ export const TutorialContainer = styled.div`
 
 export const TutorialHeader = styled.div`
   width: 100%;
-  height: 7vh;
+  height: 9vh;
   background-image: url(${header});
   background-size: cover;
   background-repeat: no-repeat;
@@ -54,17 +51,17 @@ export const NavBar = styled.div`
   width: 100%;
   margin-bottom: 20px;
   position: relative;
-  border-bottom: 2px solid #C9C9C9; /* 수정된 부분 */
+  border-bottom: 2px solid #C9C9C9; 
   
   &::after {
     content: '';
     position: absolute;
     bottom: -2px;
-    left: ${props => `calc(${props.activeIndex} * 20%)`}; /* 수정된 부분 */
-    width: 20%; /* 수정된 부분 */
-    height: 2px; /* 수정된 부분 */
-    background-color: #FF3E00; /* 수정된 부분 */
-    transition: left 0.3s ease-out; /* 수정된 부분 */
+    left: ${props => `calc(${props.activeIndex} * 20%)`};
+    width: 20%; 
+    height: 2px;
+    background-color: #FF3E00; 
+    transition: left 0.3s ease-out;
   }
 `;
 
@@ -86,26 +83,14 @@ export const ExerciseList = styled.div`
 
 export const ExerciseCard = styled.div`
   width: 100%;
-  height: 220px;
-  border-radius: 15px;
-  background-color: #FFFFFF;
-  background-size: cover;
   cursor: pointer;
-
-  background-position: center;
   position: relative;
+  margin: 0 auto;
 
-  &:nth-child(1) {
-    background-image: url(${squat});
+  & .cardImage {
+    width:100%;
   }
-
-  &:nth-child(2) {
-    background-image: url(${lunge});
-  }
-
-  &:nth-child(3) {
-    background-image: url(${calfraise});
-  }
+  
 `;
 
 export const LikeButton = styled.button`
@@ -117,6 +102,8 @@ export const LikeButton = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  z-index: 10;
 
   &:focus {
     outline: none;

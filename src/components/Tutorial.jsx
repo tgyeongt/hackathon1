@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import {
   TutorialContainer, TutorialHeader, BackButton, NavBar, NavOption, ExerciseList, ExerciseCard, LikeButton,
 } from './TutorialStyles';
-import likeIcon from '/src/assets/emptyheart.png';
-import likedIcon from '/src/assets/fullheart.png';
+import emptyIcon from '/src/assets/emptyheart.png';
+import fullIcon from '/src/assets/fullheart.png';
+import squat from '/src/assets/squat.png';
+import lunge from '/src/assets/lunge.png';
+import calfraise from '/src/assets/calfraise.png';
 
 const Tutorial = () => {
 
@@ -41,13 +44,11 @@ const Tutorial = () => {
         ))}
       </NavBar>
       <ExerciseList>
-        {['Card1', 'Card2', 'Card3'].map((card, index) => (
-          <ExerciseCard key={card}>
-            <LikeButton
-              onClick={() => handleLikeClick(index)}
-              liked={liked[index]}
-            >
-              <img src={liked[index] ? likedIcon : likeIcon} alt="like" />
+        {[squat, lunge, calfraise].map((exercise, index) => (
+          <ExerciseCard key={index}>
+            <img className='cardImage' src={exercise} alt="exercise"/>
+            <LikeButton onClick={() => handleLikeClick(index)}>
+              <img src={liked[index] ? fullIcon : emptyIcon} alt="like"/>
             </LikeButton>
           </ExerciseCard>
         ))}
