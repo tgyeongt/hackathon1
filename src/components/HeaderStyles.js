@@ -46,7 +46,11 @@ export const BackButton = styled.button`
   }
 `;
 
-export const NavBar = styled.div`
+export const NavBar = styled.div.attrs(props => ({
+  style: {
+    '--active-index': props.activeindex,
+  }
+}))`
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -58,7 +62,7 @@ export const NavBar = styled.div`
     content: '';
     position: absolute;
     bottom: -2px;
-    left: ${props => `calc(${props.activeIndex} * 20%)`};
+    left: calc(var(--active-index) * 20%);
     width: 20%; 
     height: 2px;
     background-color: #FF3E00; 
@@ -66,11 +70,11 @@ export const NavBar = styled.div`
   }
 `;
 
-export const NavOption = styled(NavLink)`
+export const NavOption = styled(NavLink).attrs({ activeClassName: 'active' })`
   padding: 10px;
   cursor: pointer;
   font-weight: bold;
-  color: ${props => (props.active ? '#FF3E00' : '#C9C9C9')};
+  color: #C9C9C9;
   position: relative;
   text-decoration: none;
 

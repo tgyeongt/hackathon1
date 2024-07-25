@@ -31,7 +31,6 @@ const Tutorial = () => {
 
   return (
     <TutorialContainer>
-      <Header/>
       <ExerciseList>
         {[squat, lunge, calfraise].map((exercise, index) => (
           <ExerciseCard key={index}>

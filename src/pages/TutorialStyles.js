@@ -1,6 +1,4 @@
 import styled, { css, keyframes } from 'styled-components';
-import header from '/src/assets/header.png';
-import backbutton from '/src/assets/backbutton.svg';
 
 export const TutorialContainer = styled.div`
   display: flex;
