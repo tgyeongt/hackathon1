@@ -9,9 +9,9 @@ export const TutorialContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   max-width: 500px;
-  overflow: scroll;
+  overflow-y: scroll;
   width: 100%;
   margin: 0 auto;
   font-size: 12px;
