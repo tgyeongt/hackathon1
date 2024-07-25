@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import {
-  TutorialContainer, TutorialHeader, BackButton, NavBar, NavOption, ExerciseList, ExerciseCard, LikeButton,
+  TutorialContainer, ExerciseList, ExerciseCard, LikeButton,
 } from './TutorialStyles';
 import emptyIcon from '/src/assets/emptyheart.png';
 import fullIcon from '/src/assets/fullheart.png';
 import squat from '/src/assets/squat.png';
 import lunge from '/src/assets/lunge.png';
 import calfraise from '/src/assets/calfraise.png';
+import Header from '../components/Header';
 
 const Tutorial = () => {
 
@@ -30,19 +31,7 @@ const Tutorial = () => {
 
   return (
     <TutorialContainer>
-      <TutorialHeader>
-        <BackButton />
-      </TutorialHeader>
-      <NavBar activeIndex={activeIndex}>
-        {navOptions.map(option => (
-          <NavOption
-            key={option}
-            active={selectedNav === option}
-            onClick={() => handleNavClick(option)}>
-            {option}
-          </NavOption>
-        ))}
-      </NavBar>
+      <Header/>
       <ExerciseList>
         {[squat, lunge, calfraise].map((exercise, index) => (
           <ExerciseCard key={index}>
