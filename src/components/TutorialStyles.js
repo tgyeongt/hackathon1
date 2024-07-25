@@ -16,6 +16,10 @@ export const TutorialContainer = styled.div`
   font-size: 12px;
   font-family: "Inter-Regular", sans-serif;
   color: #bdbdbd;
+  @supports(-webkit-apperance:none) and (stroke-color:transparent) {
+    min-height: -webkit-fill-available;
+  }
+  -ms-overlow-style: none;
 `;
 
 export const TutorialHeader = styled.div`
