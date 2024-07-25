@@ -9,7 +9,7 @@ export const TutorialContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
@@ -20,7 +20,7 @@ export const TutorialContainer = styled.div`
 
 export const TutorialHeader = styled.div`
   width: 100%;
-  height: 90px;
+  height: 7vh;
   background-image: url(${header});
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,11 +80,13 @@ export const ExerciseList = styled.div`
 `;
 
 export const ExerciseCard = styled.div`
-  width: 400px;
-  height: 224px;
+  width: 100%;
+  height: 220px;
+  border-radius: 15px;
   background-color: #FFFFFF;
+  background-size: cover;
   cursor: pointer;
-  background-size: 400px 224px;
+
   background-position: center;
   position: relative;
 
