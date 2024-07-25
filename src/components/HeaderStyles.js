@@ -38,7 +38,7 @@ export const BackButton = styled.button`
   background-color: transparent;
   border: none;
   margin-top: 10px;
-  margin-left: 30px;
+  margin-left: 20px;
   
   &:focus {
     outline: none;
