@@ -8,7 +8,7 @@ export const HeaderContainer = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 500px;
-  max-height: 90px;
+  max-height: 140px;
   overflow-y: scroll;
   width: 100%;
   margin: 0 auto;
