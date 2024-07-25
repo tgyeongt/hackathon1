@@ -8,16 +8,13 @@ export const HeaderContainer = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 500px;
+  max-height: 90px;
   overflow-y: scroll;
   width: 100%;
   margin: 0 auto;
   font-size: 12px;
   font-family: "Inter-Regular", sans-serif;
   color: #bdbdbd;
-  @supports(-webkit-appearance:none) and (stroke-color:transparent) {
-    min-height: -webkit-fill-available;
-  }
-  -ms-overflow-style: none;
 `;
 
 export const TutorialHeader = styled.div`
