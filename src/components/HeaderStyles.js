@@ -1,8 +1,9 @@
-import styled, { css, keyframes } from 'styled-components';
+import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 import header from '/src/assets/header.png';
 import backbutton from '/src/assets/backbutton.svg';
 
-export const TutorialContainer = styled.div`
+export const HeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,10 +15,10 @@ export const TutorialContainer = styled.div`
   font-size: 12px;
   font-family: "Inter-Regular", sans-serif;
   color: #bdbdbd;
-  @supports(-webkit-apperance:none) and (stroke-color:transparent) {
+  @supports(-webkit-appearance:none) and (stroke-color:transparent) {
     min-height: -webkit-fill-available;
   }
-  -ms-overlow-style: none;
+  -ms-overflow-style: none;
 `;
 
 export const TutorialHeader = styled.div`
@@ -65,10 +66,15 @@ export const NavBar = styled.div`
   }
 `;
 
-export const NavOption = styled.div`
+export const NavOption = styled(NavLink)`
   padding: 10px;
   cursor: pointer;
   font-weight: bold;
   color: ${props => (props.active ? '#FF3E00' : '#C9C9C9')};
   position: relative;
+  text-decoration: none;
+
+  &.active {
+    color: #FF3E00;
+  }
 `;
