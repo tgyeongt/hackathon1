@@ -82,10 +82,12 @@ export const ExerciseList = styled.div`
 `;
 
 export const ExerciseCard = styled.div`
-  width: 100%;
+  width: 90%;
   cursor: pointer;
   position: relative;
   margin: 0 auto;
+  align-items: center;
+
 
   & .cardImage {
     width:100%;
