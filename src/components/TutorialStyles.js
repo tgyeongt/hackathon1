@@ -11,11 +11,16 @@ export const TutorialContainer = styled.div`
   align-items: center;
   min-height: 100vh;
   max-width: 500px;
+  overflow-y: scroll;
   width: 100%;
   margin: 0 auto;
   font-size: 12px;
   font-family: "Inter-Regular", sans-serif;
   color: #bdbdbd;
+  @supports(-webkit-apperance:none) and (stroke-color:transparent) {
+    min-height: -webkit-fill-available;
+  }
+  -ms-overlow-style: none;
 `;
 
 export const TutorialHeader = styled.div`
