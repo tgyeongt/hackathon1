@@ -19,7 +19,6 @@ export const TutorialContainer = styled.div`
 `;
 
 
-
 export const ExerciseList = styled.div`
   display: flex;
   flex-direction: column;
