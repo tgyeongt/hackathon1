@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { GlobalStyles } from './data/styles/globalstyles';
 import RootLayout from './components/RootLayout';
 import ExerciseLayout from './components/ExerciseLayout';
 import AllPage from './pages/Category/AllPage';
@@ -61,7 +62,11 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <RouterProvider router={router} />
+    <>
+      <GlobalStyles/>
+      <RouterProvider router={router} />
+    </>
+
   );
 }
 

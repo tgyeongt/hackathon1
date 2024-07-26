@@ -6,7 +6,6 @@ export const TutorialContainer = styled.div`
   align-items: center;
   min-height: 100vh;
   max-width: 500px;
-  // overflow-y: scroll;
   width: 100%;
   margin: 0 auto;
   font-size: 12px;
