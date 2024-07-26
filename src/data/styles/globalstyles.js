@@ -5,11 +5,9 @@ export  const GlobalStyles = createGlobalStyle`
     ${reset}
 
     body {
-        display: flex;
         min-height: 100vh;
-        // max-width: 500px;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
+        max-width: 500px;
+        font-family: "Inter-Regular", sans-serif;
+
     }
 `;
