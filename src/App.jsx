@@ -1,12 +1,16 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { GlobalStyles } from './data/styles/globalstyles';
+import Login from './pages/Login/LoginPage'
+
 import RootLayout from './components/RootLayout';
 import ExerciseLayout from './components/ExerciseLayout';
+
 import AllPage from './pages/Category/AllPage';
 import LowerPage from './pages/Category/LowerPage';
 import UpperPage from './pages/Category/UpperPage';
 import CorePage from './pages/Category/CorePage';
 import StretchingPage from './pages/Category/StretchingPage';
+
 import ErrorPage from './pages/Error';
 import SquatPage from './pages/Exercise/SquatPage';
 import LungePage from './pages/Exercise/LungePage';
@@ -64,7 +68,8 @@ function App() {
   return (
     <>
       <GlobalStyles/>
-      <RouterProvider router={router} />
+      {/* <RouterProvider router={router} /> */}
+      <Login/>
     </>
 
   );

@@ -4,7 +4,7 @@ import {
 } from './LoginStyles';
 import logo from '/src/assets/logo.png';
 
-const Login = () => {
+const LoginPage = () => {
   const [id, setId] = useState('');
   const [password, setPassword] = useState('');
   const [keepLoggedIn, setKeepLoggedIn] = useState(false);
@@ -63,4 +63,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginPage;
