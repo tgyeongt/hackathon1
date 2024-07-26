@@ -15,7 +15,7 @@ export const LoginContainer = styled.div`
   margin: 0 auto;
   font-size: 12px;
   font-family: "Inter-Regular", sans-serif;
-  color: #bdbdbd;
+  color: #6A6A6A;
 `;
 
 export const LoginBox = styled.div`
@@ -90,11 +90,11 @@ export const CheckboxLabel = styled.label`
 export const Links = styled.div`
   display: flex;
   justify-content: space-around;
-  color: #bdbdbd;
+  color: #6A6A6A;
   margin-bottom: 20px;
 
   a {
-    color: #bdbdbd;
+    color: #6A6A6A;
     text-decoration: none;
 
     &:hover {
