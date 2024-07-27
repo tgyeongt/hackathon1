@@ -17,6 +17,8 @@ import ErrorPage from './pages/Error';
 import SquatPage from './pages/Exercise/SquatPage';
 import LungePage from './pages/Exercise/LungePage';
 import CalfRaisePage from './pages/Exercise/CalfRaisePage';
+import ExerciseDetailPage from './pages/Exercise/ExerciseDetailPage';
+
 
 // login
 import LoginPage from './pages/Login/LoginPage';
@@ -66,6 +68,10 @@ const router = createBrowserRouter([
       {
         path: 'calfraise',
         element: <CalfRaisePage />,
+      },
+      {
+        path: 'detail/:id', 
+        element: <ExerciseDetailPage />
       }
     ]
   }

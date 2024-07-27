@@ -29,7 +29,7 @@ export const HeroShot = styled.div`
 export const MiniDivContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
 `;
 
 export const MiniDiv = styled.div`
@@ -38,7 +38,7 @@ export const MiniDiv = styled.div`
   background-color: #FFFFFF;
   border-radius: 10px;
   padding: 20px;
-  margin: 10px;
+  margin: 10px 5px 10px 0px;
 `;
 
 export const SubTitle = styled.div`
@@ -48,6 +48,7 @@ export const SubTitle = styled.div`
 
 export const MainTitle = styled.span`
   font-size: 18px;
+  font-weight: bold;
   color: #353535
 `
 
@@ -58,18 +59,22 @@ export const EngTitle = styled.span`
 
 export const BasicContainer = styled.div`
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 20px;
 `;
 
 export const AdvancedContainer = styled.div`
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  width: 90%;
 `;
 
 export const DetailDiv = styled.div`
-  width: 435px;
+  width: 100%;
   height: 121px;
-  background-color: #D9D9D9
+  background-color: #D9D9D9;
   border-radius: 10px;
+  margin-top: 10px;
 `;
 
