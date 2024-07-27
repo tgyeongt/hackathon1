@@ -2,6 +2,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { GlobalStyles } from './data/styles/globalstyles';
 import Login from './pages/Login/LoginPage'
 
+
+// tutorial
 import RootLayout from './components/RootLayout';
 import ExerciseLayout from './components/ExerciseLayout';
 
@@ -15,6 +17,11 @@ import ErrorPage from './pages/Error';
 import SquatPage from './pages/Exercise/SquatPage';
 import LungePage from './pages/Exercise/LungePage';
 import CalfRaisePage from './pages/Exercise/CalfRaisePage';
+
+// login
+import LoginPage from './pages/Login/LoginPage';
+import ForgotPasswordPage from './pages/Login/ForgotPasswordPage';
+import SignUpPage from './pages/Login/SignUpPage';
 
 const router = createBrowserRouter([
   {
@@ -64,12 +71,27 @@ const router = createBrowserRouter([
   }
 ]);
 
+const router1 = createBrowserRouter([
+  {
+    path: '/',
+    element: <LoginPage />,
+  },
+  {
+    path: '/find-password',
+    element: <ForgotPasswordPage />,
+  },
+  {
+    path: '/signup',
+    element: <SignUpPage />,
+  },
+]);
+
+
 function App() {
   return (
     <>
       <GlobalStyles/>
       <RouterProvider router={router} />
-      {/* <Login/> */}
     </>
 
   );
