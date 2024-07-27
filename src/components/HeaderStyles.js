@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import header from '/src/assets/header.png';
-import backbutton from '/src/assets/backbutton.svg';
+// import backbutton from '/src/assets/backbutton.svg';
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -23,21 +23,6 @@ export const TutorialHeader = styled.div`
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-`;
-
-export const BackButton = styled.button`
-  width: 20px;
-  height: 20px;
-  background-image: url("${backbutton}");
-  background-size: 20px 20px;
-  background-color: transparent;
-  border: none;
-  margin-top: 10px;
-  margin-left: 20px;
-  
-  &:focus {
-    outline: none;
-  }
 `;
 
 export const NavBar = styled.div.attrs(props => ({

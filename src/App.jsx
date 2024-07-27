@@ -68,8 +68,8 @@ function App() {
   return (
     <>
       <GlobalStyles/>
-      {/* <RouterProvider router={router} /> */}
-      <Login/>
+      <RouterProvider router={router} />
+      {/* <Login/> */}
     </>
 
   );

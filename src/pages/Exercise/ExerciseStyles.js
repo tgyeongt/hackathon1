@@ -1,4 +1,8 @@
 import styled, { css, keyframes } from 'styled-components';
+import category from '/src/assets/category.png';
+import level from '/src/assets/level.png';
+
+
 
 export const ExerciseContainer = styled.div`
   display: flex;
@@ -14,7 +18,33 @@ export const ExerciseContainer = styled.div`
 `;
 
 export const HeroShot = styled.div`
-      & .mainImage {
-        width:100%;
-    }
+  position: relative;
+  width: 100%;
+  
+  & .mainImage {
+    width: 100%;
+    height: auto;
+  }
 `;
+
+export const MiniDivContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 20px;
+`;
+
+export const MiniDiv = styled.div`
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+
+  & .contentImage {
+    width: 100%;
+    height: auto;
+  }
+`
+
+

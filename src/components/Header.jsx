@@ -2,8 +2,10 @@ import { NavLink, useLocation } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 
 import {
-  HeaderContainer, TutorialHeader, BackButton, NavBar, NavOption
+  HeaderContainer, TutorialHeader, NavBar, NavOption
 } from './HeaderStyles';
+
+import BackButton from './BackButton';
 
 export default function Header() {
   const navOptions = [
@@ -25,7 +27,7 @@ export default function Header() {
   return (
     <HeaderContainer>
       <TutorialHeader>
-        <BackButton />
+        <BackButton/>
       </TutorialHeader>
       <NavBar activeindex={activeIndex}>
         {navOptions.map(option => (
