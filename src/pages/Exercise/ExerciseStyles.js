@@ -12,7 +12,6 @@ export const ExerciseContainer = styled.div`
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
-  font-size: 12px;
   font-family: "Inter-Regular", sans-serif;
   background-color: #F6F6F6
 `;
@@ -31,20 +30,46 @@ export const MiniDivContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 10px 20px;
 `;
 
 export const MiniDiv = styled.div`
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 200px;
+  height 70px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 20px;
   margin: 10px;
+`;
 
-  & .contentImage {
-    width: 100%;
-    height: auto;
-  }
+export const SubTitle = styled.div`
+  font-size: 10px;
+  color: #ABABAB
 `
 
+export const MainTitle = styled.span`
+  font-size: 18px;
+  color: #353535
+`
+
+export const EngTitle = styled.span`
+  font-size: 10px;
+  color: #ABABAB
+`
+
+export const BasicContainer = styled.div`
+  display: flex;
+  width: 100%;
+`;
+
+export const AdvancedContainer = styled.div`
+  display: flex;
+  width: 100%;
+`;
+
+export const DetailDiv = styled.div`
+  width: 435px;
+  height: 121px;
+  background-color: #D9D9D9
+  border-radius: 10px;
+`;
 
