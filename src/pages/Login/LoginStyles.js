@@ -108,14 +108,20 @@ export const Links = styled.div`
 `;
 
 export const SnsLogin = styled.div`
-display
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 20px;
+  span {
+    margin-bottom: 10px;
+  }
 `;
 
 export const SnsButtons = styled.div`
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  padding: 10px;
+  width: 70%;
 `;
 
 export const SnsButton = styled.button`
