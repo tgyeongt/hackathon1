@@ -37,7 +37,7 @@ const SubmitButton = styled.button`
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
-  margin-top: auto; /* Ensures the button is at the bottom */
+  margin-top: 10px;
 
   &:focus {
     outline: none;
