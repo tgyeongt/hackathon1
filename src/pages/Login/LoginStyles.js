@@ -10,7 +10,8 @@ export const LoginContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #ffffff;
+  max-width: 500px;
+  background-color: #f6f6f6;
   font-size: 12px;
   font-family: "Inter-Regular", sans-serif;
   color: #6A6A6A;
@@ -18,7 +19,6 @@ export const LoginContainer = styled.div`
 
 export const LoginBox = styled.div`
   padding: 40px;
-  background-color: white;
   border-radius: 8px;
   align-items: center;
   width: 400px;
@@ -27,7 +27,7 @@ export const LoginBox = styled.div`
 export const LogoDiv = styled.div`
   display: flex;
   width: 100%;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   align-items: center;
   justify-content: center;
 `;
@@ -38,13 +38,14 @@ export const Form = styled.form`
 `;
 
 export const Input = styled.input`
+  width: 90%;
   height: 50px;
   margin-bottom: 10px;
   padding-left: 25px;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   border: none;
   border-radius: 32px;
-  box-shadow: inset -1px 2px 4px -2px rgba(0, 0, 0, 0.08);
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
 
   &:focus {
     outline: none;

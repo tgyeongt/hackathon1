@@ -1,42 +1,80 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
+import { Input } from './LoginStyles';
+import BackButton from '../../components/BackButton';
 
-function SignUpPage() {
-  const [username, setUsername] = useState('');
+const SignupContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f8f8f8;
+  font-family: "Inter-Regular", sans-serif;
+  color: #6A6A6A;
+  padding: 20px;
+`;
+
+const Header = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+`;
+
+const Title = styled.h1`
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+`;
+
+const SubmitButton = styled.button`
+  width: 100%;
+  height: 50px;
+  background-color: #FB8500;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: auto; /* Ensures the button is at the bottom */
+
+  &:focus {
+    outline: none;
+  }
+`;
+
+const SignupPage = () => {
+  const [id, setId] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // 회원가입 로직 추가
+  const handleSignup = () => {
+    // 서버에서 회원가입 처리 로직 추가
+    alert(`회원가입이 완료되었습니다. 아이디: ${id}, 비밀번호: ${password}`);
   };
 
   return (
-    <div>
-      <h2>회원가입</h2>
-      <form onSubmit={handleSubmit}>
-        <label>
-          사용자 이름:
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          비밀번호:
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <button type="submit">회원가입</button>
-      </form>
-    </div>
+    <SignupContainer>
+      <Header>
+        <BackButton />
+      </Header>
+      <Title>회원가입</Title>
+      <br />
+      <Input
+        type="text"
+        placeholder="아이디를 입력해주세요"
+        value={id}
+        onChange={(e) => setId(e.target.value)}
+      />
+      <Input
+        type="password"
+        placeholder="비밀번호를 입력해주세요"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <SubmitButton onClick={handleSignup}>완료</SubmitButton>
+    </SignupContainer>
   );
-}
+};
 
-export default SignUpPage;
+export default SignupPage;
