@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import uncheckedImg from "/src/assets/unchecked.svg";
 import checkedImg from "/src/assets/checked.svg";
-import googleLogo from '/src/assets/g-logo.png';
+import googleLogo from '/src/assets/g-logo.svg';
 import naverLogo from '/src/assets/n-logo.png';
 import kakaoLogo from '/src/assets/k-logo.png';
 
@@ -138,7 +138,6 @@ export const SnsButton = styled.button`
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #ddd;
   border: none;
   cursor: pointer;
   background-size: cover;
