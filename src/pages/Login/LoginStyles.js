@@ -34,11 +34,12 @@ export const LogoDiv = styled.div`
 
 export const Form = styled.form`
   display: flex;
+  max-width: 500px;
   flex-direction: column;
 `;
 
 export const Input = styled.input`
-  width: 90%;
+  width: 93%;
   height: 50px;
   margin-bottom: 10px;
   padding-left: 25px;
@@ -53,6 +54,7 @@ export const Input = styled.input`
 `;
 
 export const LoginButton = styled.button`
+  width: 100%;
   height: 50px;
   margin-bottom: 10px;
   background-color: #FB8500;

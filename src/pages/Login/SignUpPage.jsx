@@ -31,13 +31,12 @@ const Title = styled.h1`
 const SubmitButton = styled.button`
   width: 100%;
   height: 50px;
+  margin-bottom: 10px;
   background-color: #FB8500;
   color: white;
   border: none;
-  border-radius: 8px;
-  font-size: 14px;
+  border-radius: 32px;
   cursor: pointer;
-  margin-top: 10px;
 
   &:focus {
     outline: none;
