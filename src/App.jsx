@@ -17,7 +17,7 @@ import ErrorPage from './pages/Error';
 import SquatPage from './pages/Exercise/SquatPage';
 import LungePage from './pages/Exercise/LungePage';
 import CalfRaisePage from './pages/Exercise/CalfRaisePage';
-import ExerciseDetailPage from './pages/Exercise/ExerciseDetailPage';
+import ExerciseDetailPage from './components/ExerciseDetailPage';
 
 
 // login

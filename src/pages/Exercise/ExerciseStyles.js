@@ -1,6 +1,4 @@
 import styled, { css, keyframes } from 'styled-components';
-import category from '/src/assets/category.png';
-import level from '/src/assets/level.png';
 
 
 
@@ -32,36 +30,17 @@ export const MiniDivContainer = styled.div`
   width: 90%;
 `;
 
-export const MiniDiv = styled.div`
-  width: 200px;
-  height 70px;
-  background-color: #FFFFFF;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 10px 5px 10px 0px;
-`;
-
-export const SubTitle = styled.div`
-  font-size: 10px;
-  color: #ABABAB
-`
-
-export const MainTitle = styled.span`
-  font-size: 18px;
-  font-weight: bold;
-  color: #353535
-`
-
-export const EngTitle = styled.span`
-  font-size: 10px;
-  color: #ABABAB
-`
-
 export const BasicContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 90%;
   margin-bottom: 20px;
+`;
+
+export const MainTitle = styled.h1`
+  font-size: 24px;
+  font-weight: bold;
+  color: #353535;
 `;
 
 export const AdvancedContainer = styled.div`

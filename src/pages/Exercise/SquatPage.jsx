@@ -1,8 +1,9 @@
 import React from 'react';
-import { EngTitle, ExerciseContainer, HeroShot, MainTitle, MiniDiv, SubTitle, MiniDivContainer, BasicContainer, AdvancedContainer } from './ExerciseStyles';
+import { ExerciseContainer, HeroShot, MainTitle, MiniDivContainer, BasicContainer, AdvancedContainer } from './ExerciseStyles';
 import BackButton from '../../components/BackButton';
 import squatMain from '/src/assets/squatmain.png';
 import ExerciseCard from '../../components/ExerciseCard';
+import StateCard from '../../components/StateCard';
 
 export default function SquatPage() {
     return (
@@ -12,18 +13,16 @@ export default function SquatPage() {
                 <img className='mainImage' src={squatMain}/>
             </HeroShot>
             <MiniDivContainer>
-                <MiniDiv>
-                 <SubTitle>카테고리</SubTitle>
-                 <br />
-                 <MainTitle>하체</MainTitle>
-                 <EngTitle> Lower</EngTitle>
-                </MiniDiv>
-                <MiniDiv>
-                 <SubTitle>레벨</SubTitle>
-                 <br />
-                 <MainTitle>중급자</MainTitle>
-                 <EngTitle> Intermediate</EngTitle>
-                </MiniDiv>
+                <StateCard
+                    text1="카테고리"
+                    title="하체"
+                    text2=" Lower"
+                />
+                <StateCard
+                    text1="레벨"
+                    title="중급자"
+                    text2=" Intermediate"
+                />
             </MiniDivContainer>
             <BasicContainer>
                 <MainTitle>베이직</MainTitle> 
