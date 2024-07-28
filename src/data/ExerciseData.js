@@ -15,8 +15,7 @@ const ExerciseData = [
       title: '하프 스쿼트',
       engtitle: 'Half Squat',
       content: `
-        하프 스쿼트는 대퇴사두근을 타겟으로 하는 운동입니다.
-        3세트 15회 반복하세요.`,
+        하프 스쿼트 설명`,
       img: '/src/assets/halfsquat.png',
     },
     {
@@ -24,8 +23,7 @@ const ExerciseData = [
       title: '와이드 스쿼트',
       engtitle: 'Wide Squat',
       content: `
-        와이드 스쿼트는 내전근을 강화하는 운동입니다.
-        3세트 15회 반복하세요.`,
+        와이드 스쿼트 설명`,
       img: '/src/assets/widesquat.png',
     },
     // 다른 운동 데이터 추가
