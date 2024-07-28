@@ -10,9 +10,7 @@ export const LoginContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  max-width: 500px;
-  width: 100%;
-  margin: 0 auto;
+  background-color: #ffffff;
   font-size: 12px;
   font-family: "Inter-Regular", sans-serif;
   color: #6A6A6A;
@@ -22,13 +20,16 @@ export const LoginBox = styled.div`
   padding: 40px;
   background-color: white;
   border-radius: 8px;
-  text-align: center;
+  align-items: center;
   width: 400px;
 `;
 
-export const Logo = styled.img`
-  width: 150px;
+export const LogoDiv = styled.div`
+  display: flex;
+  width: 100%;
   margin-bottom: 80px;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Form = styled.form`
@@ -53,7 +54,7 @@ export const Input = styled.input`
 export const LoginButton = styled.button`
   height: 50px;
   margin-bottom: 10px;
-  background-color: #ff702a;
+  background-color: #FB8500;
   color: white;
   border: none;
   border-radius: 32px;
@@ -90,6 +91,9 @@ export const CheckboxLabel = styled.label`
 export const Links = styled.div`
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
   color: #6A6A6A;
   margin-bottom: 20px;
 
@@ -104,6 +108,7 @@ export const Links = styled.div`
 `;
 
 export const SnsLogin = styled.div`
+display
   margin-top: 20px;
 `;
 

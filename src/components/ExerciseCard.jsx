@@ -34,19 +34,19 @@ const TextContainer = styled.div`
   box-sizing: border-box;
 `;
 
-const CardTitle = styled.h3`
+const CardTitle = styled.span`
   font-size: 16px;
   font-weight: bold;
   color: #353535;
   margin: 0;
 `;
 
-const CardContent = styled.p`
+const CardContent = styled.span`
   font-size: 10px;
   color: #353535;
 `;
 
-const ExerciseCard = ({ img, title, content, navigateTo }) => {
+const ExerciseCard = ({ img, title, text1, text2, navigateTo }) => {
   return (
     <CardContainer to={navigateTo}>
         <VideoContainer img={img}>
@@ -54,7 +54,8 @@ const ExerciseCard = ({ img, title, content, navigateTo }) => {
         </VideoContainer>
       <TextContainer>
         <CardTitle>{title}</CardTitle>
-        <CardContent>{content}</CardContent>
+        <CardContent>{text1}</CardContent> 
+        <CardContent>{text2}</CardContent>
       </TextContainer>
     </CardContainer>
   );
