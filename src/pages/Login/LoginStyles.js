@@ -144,7 +144,7 @@ export const SnsButton = styled.button`
   background-position: center;
 
   &.snsButton1 {
-    background-image: url(${googleLogo});
+    background-image: url("${googleLogo}");
   }
 
   &.snsButton2 {
