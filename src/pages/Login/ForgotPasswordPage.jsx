@@ -25,7 +25,7 @@ const Title = styled.h1`
   margin-left: 10px;
   font-size: 20px;
   font-weight: bold;
-  color: #333;
+  color: #6a6a6a;
 `;
 
 const SubmitButton = styled.button`

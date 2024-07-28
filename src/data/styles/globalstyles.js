@@ -7,7 +7,7 @@ export  const GlobalStyles = createGlobalStyle`
     body {
         min-height: 100vh;
         max-width: 500px;
-        font-family: "Inter-Regular", sans-serif;
+        font-family: "Pretendard-Regular", sans-serif;
 
     }
 `;

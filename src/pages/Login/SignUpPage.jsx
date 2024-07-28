@@ -25,7 +25,7 @@ const Title = styled.h1`
   margin-left: 10px;
   font-size: 20px;
   font-weight: bold;
-  color: #333;
+  color: #6a6a6a;
 `;
 
 const SubmitButton = styled.button`
@@ -50,7 +50,7 @@ const SignupPage = () => {
 
   const handleSignup = () => {
     // 서버에서 회원가입 처리 로직 추가
-    alert(`회원가입이 완료되었습니다. 아이디: ${id}, 비밀번호: ${password}`);
+    alert(`회원가입이 완료되었습니다. 아이디: ${id} 비밀번호: ${password}`);
   };
 
   return (
