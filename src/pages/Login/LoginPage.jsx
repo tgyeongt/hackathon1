@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  LoginContainer, LoginBox, LogoDiv, Form, Input, LoginButton, KeepLoggedIn, Checkbox, CheckboxLabel, Links, SnsLogin, SnsButtons, SnsButton
+  LoginContainer, LoginBox, LogoDiv, Form, InputDiv, Input, LoginButton, KeepLoggedIn, Checkbox, CheckboxLabel, Links, SnsLogin, SnsButtons, SnsButton
 } from './LoginStyles';
 import logo from '/src/assets/logo.svg';
 
@@ -22,19 +22,22 @@ const LoginPage = () => {
           <img src={logo} alt="logo" />
         </LogoDiv>
         <Form onSubmit={handleLogin}>
-          <Input
-            type="text"
-            placeholder="아이디"
-            value={id}
-            onChange={(e) => setId(e.target.value)}
-          />
-          <Input
-            type="password"
-            placeholder="비밀번호"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <LoginButton type="submit">로그인</LoginButton>
+          <InputDiv>
+            <Input
+              type="text"
+              placeholder="아이디"
+              value={id}
+              onChange={(e) => setId(e.target.value)}
+            />
+            <Input
+              type="password"
+              placeholder="비밀번호"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <LoginButton type="submit">로그인</LoginButton>
+          </InputDiv>
+          
           <KeepLoggedIn>
             <Checkbox
               type="checkbox"

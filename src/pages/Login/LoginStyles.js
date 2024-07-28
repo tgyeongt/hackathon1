@@ -34,12 +34,17 @@ export const LogoDiv = styled.div`
 
 export const Form = styled.form`
   display: flex;
-  max-width: 500px;
   flex-direction: column;
 `;
 
+export const InputDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`;
+
 export const Input = styled.input`
-  width: 93%;
+  width: 100%;
   height: 50px;
   margin-bottom: 10px;
   padding-left: 25px;
@@ -47,6 +52,7 @@ export const Input = styled.input`
   border: none;
   border-radius: 32px;
   box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
 
   &:focus {
     outline: none;
@@ -62,6 +68,7 @@ export const LoginButton = styled.button`
   border: none;
   border-radius: 32px;
   cursor: pointer;
+  box-sizing: border-box;
 
   &:focus {
     outline: none;

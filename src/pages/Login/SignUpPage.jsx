@@ -21,6 +21,11 @@ const Header = styled.div`
   padding: 10px;
 `;
 
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const Title = styled.h1`
   margin-left: 10px;
   font-size: 20px;
@@ -57,21 +62,24 @@ const SignupPage = () => {
       <Header>
         <BackButton />
       </Header>
-      <Title>회원가입</Title>
-      <br />
-      <Input
-        type="text"
-        placeholder="아이디를 입력해주세요"
-        value={id}
-        onChange={(e) => setId(e.target.value)}
-      />
-      <Input
-        type="password"
-        placeholder="비밀번호를 입력해주세요"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <SubmitButton onClick={handleSignup}>완료</SubmitButton>
+      <Content>
+        <Title>회원가입</Title>
+        <br />
+        <Input
+          type="text"
+          placeholder="아이디를 입력해주세요"
+          value={id}
+          onChange={(e) => setId(e.target.value)}
+        />
+        <Input
+          type="password"
+          placeholder="비밀번호를 입력해주세요"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <SubmitButton onClick={handleSignup}>완료</SubmitButton>
+      </Content>
+      
     </SignupContainer>
   );
 };
