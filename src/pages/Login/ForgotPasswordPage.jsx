@@ -6,7 +6,7 @@ import BackButton from '../../components/BackButton';
 const ForgotPasswordContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 95vh;
   background-color: #f8f8f8;
   font-family: "Inter-Regular", sans-serif;
   color: #6A6A6A;
