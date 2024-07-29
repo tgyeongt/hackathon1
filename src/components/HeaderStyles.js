@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import header from '/src/assets/header.png';
-// import backbutton from '/src/assets/backbutton.svg';
 
 export const HeaderContainer = styled.div`
   display: flex;

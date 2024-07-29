@@ -3,15 +3,31 @@ import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import ExerciseData from '/src/data/ExerciseData';
 import StateCard from './StateCard';
+import BackButton from './BackButton';
 // import YouTube from "react-youtube";
 
 const PageContainer = styled.div`
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 12px;
+  background-color: #F6F6F6;
 `;
 
+const HeaderContainer = styled.div`
+  height: 50px;
+`;
+
+const DetailContainer = styled.div`
+  width: 90%
+`;
 
 const Title = styled.span`
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: #353535
 `
@@ -59,26 +75,34 @@ const ExerciseDetailPage = () => {
 
   return (
     <PageContainer>
-
-      <Title>{exercise.title}</Title>
-      <EngTitle>{exercise.engtitle}</EngTitle>
-      <CardList>
-        <StateCard
-          text1="시간"
-          title="15분"
-          text2=""
-        />
-        <StateCard
-            text1="세트"
-            title="3세트"
+      <HeaderContainer>
+        <BackButton/>
+      </HeaderContainer>
+      <DetailContainer>
+        <Title>{exercise.title} </Title>
+        <EngTitle>{exercise.engtitle}</EngTitle>
+        <CardList>
+          <StateCard
+            text1="시간"
+            title="15분"
             text2=""
-        />
-      </CardList>
+          />
+          <StateCard
+              text1="세트"
+              title="3세트"
+              text2=""
+          />
+        </CardList>
+        
+        <Content>{exercise.content}</Content>
+
+        <TestButton>
+          <p>자세측정하러가기</p>
+        </TestButton>
+      </DetailContainer>
       
-      <Content>{exercise.content}</Content>
-      <TestButton>
-        <p>자세측정하러가기</p>
-      </TestButton>
+
+      
     </PageContainer>
   );
 };

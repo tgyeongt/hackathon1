@@ -1,7 +1,5 @@
 import styled, { css, keyframes } from 'styled-components';
 
-
-
 export const ExerciseContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -10,8 +8,7 @@ export const ExerciseContainer = styled.div`
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
-  font-family: "Inter-Regular", sans-serif;
-  background-color: #F6F6F6
+  background-color: #F6F6F6;
 `;
 
 export const HeroShot = styled.div`
@@ -38,7 +35,7 @@ export const BasicContainer = styled.div`
 `;
 
 export const MainTitle = styled.h1`
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   color: #353535;
 `;

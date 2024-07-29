@@ -7,7 +7,7 @@ import emptyIcon from '/src/assets/emptyheart.png';
 import fullIcon from '/src/assets/fullheart.png';
 import squat from '/src/assets/squat.png';
 import lunge from '/src/assets/lunge.png';
-import calfraise from '/src/assets/calfraise.png';
+import pushup from '/src/assets/pushup.png';
 
 export default function AllPage() {
     const [liked, setLiked] = useState([false, false, false]);
@@ -23,7 +23,7 @@ export default function AllPage() {
     const exercises = [
         { image: squat, name: 'squat', path: '/exercise/squat' },
         { image: lunge, name: 'lunge', path: '/exercise/lunge' },
-        { image: calfraise, name: 'calfraise', path: '/exercise/calfraise' }
+        { image: pushup, name: 'pushup', path: '/exercise/pushup' }
     ];
 
     return (

@@ -1,22 +1,16 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { GlobalStyles } from './data/styles/globalstyles';
-import Login from './pages/Login/LoginPage'
-
 
 // tutorial
 import RootLayout from './components/RootLayout';
 import ExerciseLayout from './components/ExerciseLayout';
 
-import AllPage from './pages/Category/AllPage';
-import LowerPage from './pages/Category/LowerPage';
-import UpperPage from './pages/Category/UpperPage';
-import CorePage from './pages/Category/CorePage';
-import StretchingPage from './pages/Category/StretchingPage';
+import AllPage from './pages/Exercise/AllPage';
 
 import ErrorPage from './pages/Error';
 import SquatPage from './pages/Exercise/SquatPage';
 import LungePage from './pages/Exercise/LungePage';
-import CalfRaisePage from './pages/Exercise/CalfRaisePage';
+import PushupPage from './pages/Exercise/PushupPage';
 import ExerciseDetailPage from './components/ExerciseDetailPage';
 
 
@@ -35,22 +29,6 @@ const router = createBrowserRouter([
         index: true,
         element: <AllPage />,
       },
-      {
-        path: 'lower',
-        element: <LowerPage />,
-      },
-      {
-        path: 'upper',
-        element: <UpperPage />,
-      },
-      {
-        path: 'core',
-        element: <CorePage />,
-      },
-      {
-        path: 'stretching',
-        element: <StretchingPage />,
-      }
     ]
   },
   {
@@ -66,8 +44,8 @@ const router = createBrowserRouter([
         element: <LungePage />,
       },
       {
-        path: 'calfraise',
-        element: <CalfRaisePage />,
+        path: 'pushup',
+        element: <PushupPage />,
       },
       {
         path: 'detail/:id', 
@@ -92,12 +70,11 @@ const router1 = createBrowserRouter([
   },
 ]);
 
-
 function App() {
   return (
     <>
       <GlobalStyles/>
-      <RouterProvider router={router1} />
+      <RouterProvider router={router} />
     </>
 
   );

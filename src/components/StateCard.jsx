@@ -16,7 +16,7 @@ const Text1 = styled.div`
 `
 
 const Title = styled.span`
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: #353535
 `

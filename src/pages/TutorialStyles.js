@@ -9,7 +9,6 @@ export const TutorialContainer = styled.div`
   width: 100%;
   margin: 0 auto;
   font-size: 12px;
-  font-family: "Inter-Regular", sans-serif;
 `;
 
 
@@ -38,7 +37,7 @@ export const ExerciseCard = styled.div`
 export const LikeButton = styled.button`
   position: absolute;
   top: 15px;
-  right: 25px;
+  left: 15px;
   width: 20px;
   height: 20px;
   background-color: transparent;

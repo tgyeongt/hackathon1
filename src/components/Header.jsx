@@ -12,7 +12,6 @@ export default function Header() {
     { name: '전체', path: '/' },
     { name: '하체', path: '/lower' },
     { name: '상체', path: '/upper' },
-    { name: '코어', path: '/core' },
     { name: '스트레칭', path: '/stretching' }
   ];
 
@@ -29,16 +28,6 @@ export default function Header() {
       <TutorialHeader>
         <BackButton/>
       </TutorialHeader>
-      <NavBar activeindex={activeIndex}>
-        {navOptions.map(option => (
-          <NavOption
-            key={option.name}
-            to={option.path}
-          >
-            {option.name}
-          </NavOption>
-        ))}
-      </NavBar>
     </HeaderContainer>
   );
 }
