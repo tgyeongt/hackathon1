@@ -20,7 +20,7 @@ const Header = styled.div`
 `;
 
 const ContentContainer = styled.div`
-  padding: 30px;
+  padding: 40px;
   border-radius: 8px;
   align-items: center;
 `
