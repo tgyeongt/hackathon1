@@ -4,7 +4,7 @@ import { GlobalStyles } from './data/styles/globalstyles';
 // tutorial
 import RootLayout from './components/RootLayout';
 
-import AllPage from './pages/Exercise/AllPage';
+import AllPage from './pages/Exercise/TutorialPage';
 
 import ErrorPage from './pages/Error';
 import SquatPage from './pages/Exercise/SquatPage';

@@ -31,7 +31,7 @@ export default function SquatPage() {
                     title="기본 스쿼트"
                     text1="Basic Squat"
                     text2="3set 15min"
-                    navigateTo="/exercise/detail/1" // ID를 포함한 경로
+                    navigateTo="/exercise/detail/1" 
                 />
             </BasicContainer>
             <AdvancedContainer>
@@ -40,13 +40,13 @@ export default function SquatPage() {
                     title="하프 스쿼트"
                     text1="Half Squat"
                     text2="3set 15min"
-                    navigateTo="/exercise/detail/2" // ID를 포함한 경로
+                    navigateTo="/exercise/detail/2" 
                 />
                 <ExerciseCard
                     title="와이드 스쿼트"
                     text1="Wide Squat"
                     text2="3set 15min"
-                    navigateTo="/exercise/detail/3" // ID를 포함한 경로
+                    navigateTo="/exercise/detail/3" 
                 />
             </AdvancedContainer>
         </ExerciseContainer>
