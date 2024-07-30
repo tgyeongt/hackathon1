@@ -47,7 +47,7 @@ export const ExerciseData = [
       2. 뒷발 무릎이 지면에 닿기 직전까지 내려간다.\n
       3. 앞쪽 무릎이 발끝을 넘지 않도록 한다.\n
       4. 일어날 때 앞발 뒤꿈치로 지면을 밀어 올린다.`,
-    "video": "exampleVideoId3",
+    "video": "gltEwrNd5Z8",
     "sets": "3세트",
     "time": "10분"
   },
@@ -60,7 +60,7 @@ export const ExerciseData = [
       2. 한쪽 무릎을 굽히고 다른 쪽 다리는 쭉 편다.\n
       3. 굽힌 무릎의 발끝 방향으로 몸을 낮춘다.\n
       4. 일어날 때 굽힌 다리의 발뒤꿈치로 지면을 밀어 올린다.`,
-    "video": "exampleVideoId4",
+    "video": "bGbL8VYiQi8",
     "sets": "3세트",
     "time": "12분"
   },
@@ -73,7 +73,7 @@ export const ExerciseData = [
       2. 뒷발 무릎이 지면에 닿기 직전까지 내려간다.\n
       3. 앞쪽 무릎이 발끝을 넘지 않도록 한다.\n
       4. 일어날 때 앞발 뒤꿈치로 지면을 밀어 올린다.`,
-    "video": "exampleVideoId5",
+    "video": "pgv8z75zxIw",
     "sets": "3세트",
     "time": "12분"
   },
@@ -86,7 +86,7 @@ export const ExerciseData = [
       2. 몸을 곧게 펴고 팔꿈치를 굽혀 가슴을 바닥에 가깝게 내린다.\n
       3. 팔꿈치를 펴면서 몸을 밀어 올린다.\n
       4. 코어 근육에 힘을 주며 몸이 일직선을 유지하도록 한다.`,
-    "video": "exampleVideoId6",
+    "video": "0DVCSDO30HU",
     "sets": "3세트",
     "time": "8분"
   },
@@ -99,7 +99,7 @@ export const ExerciseData = [
       2. 팔꿈치를 굽혀 가슴을 바닥에 가깝게 내린다.\n
       3. 팔꿈치를 펴면서 몸을 밀어 올린다.\n
       4. 코어 근육에 힘을 주며 몸이 일직선을 유지하도록 한다.`,
-    "video": "exampleVideoId7",
+    "video": "BRiHEvlj_UI",
     "sets": "3세트",
     "time": "8분"
   },
@@ -112,7 +112,7 @@ export const ExerciseData = [
       2. 몸을 곧게 펴고 팔꿈치를 굽혀 가슴을 손 위로 내린다.\n
       3. 팔꿈치를 펴면서 몸을 밀어 올린다.\n
       4. 삼두근에 집중하여 운동한다.`,
-    "video": "exampleVideoId8",
+    "video": "ZdDDuJX0-wk",
     "sets": "3세트",
     "time": "10분"
   }

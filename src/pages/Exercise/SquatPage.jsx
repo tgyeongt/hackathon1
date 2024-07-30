@@ -1,9 +1,13 @@
 import React from 'react';
 import { ExerciseContainer, HeroShot, MainTitle, MiniDivContainer, BasicContainer, AdvancedContainer } from './ExerciseStyles';
 import BackButton from '../../components/BackButton';
-import squatMain from '/src/assets/squatmain.png';
 import ExerciseCard from '../../components/ExerciseCard';
 import StateCard from '../../components/StateCard';
+import squatMain from '/src/assets/squatmain.png';
+import basicSquat from '/src/assets/exercise/squat1.png'
+import halfSquat from '/src/assets/exercise/squat2.png'
+import wideSquat from '/src/assets/exercise/squat3.png'
+
 
 export default function SquatPage() {
     return (
@@ -27,7 +31,7 @@ export default function SquatPage() {
             <BasicContainer>
                 <MainTitle>베이직</MainTitle> 
                 <ExerciseCard
-                    img={squatMain}
+                    img={basicSquat}
                     title="기본 스쿼트"
                     text1="Basic Squat"
                     text2="3set 15min"
@@ -37,15 +41,17 @@ export default function SquatPage() {
             <AdvancedContainer>
                  <MainTitle>응용 동작</MainTitle> 
                  <ExerciseCard
+                    img={halfSquat}
                     title="하프 스쿼트"
                     text1="Half Squat"
-                    text2="3set 15min"
+                    text2="3set 10min"
                     navigateTo="/exercise/detail/2" 
                 />
                 <ExerciseCard
+                    img={wideSquat}
                     title="와이드 스쿼트"
                     text1="Wide Squat"
-                    text2="3set 15min"
+                    text2="3set 12min"
                     navigateTo="/exercise/detail/3" 
                 />
             </AdvancedContainer>

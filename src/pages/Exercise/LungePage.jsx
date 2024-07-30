@@ -1,9 +1,13 @@
 import React from 'react';
 import { ExerciseContainer, HeroShot, MainTitle, MiniDivContainer, BasicContainer, AdvancedContainer } from './ExerciseStyles';
 import BackButton from '../../components/BackButton';
-import lungeMain from '/src/assets/lungemain.png';
 import ExerciseCard from '../../components/ExerciseCard';
 import StateCard from '../../components/StateCard';
+
+import lungeMain from '/src/assets/lungemain.png';
+import basicLunge from '/src/assets/exercise/lunge1.png'
+import sideLunge from '/src/assets/exercise/lunge2.png'
+import reverseLunge from '/src/assets/exercise/lunge3.png'
 
 export default function LungePage() {
     return (
@@ -27,7 +31,7 @@ export default function LungePage() {
             <BasicContainer>
                 <MainTitle>베이직</MainTitle> 
                 <ExerciseCard
-                    img={lungeMain}
+                    img={basicLunge}
                     title="기본 런지"
                     text1="Basic Lunge"
                     text2="3set 10min"
@@ -37,12 +41,14 @@ export default function LungePage() {
             <AdvancedContainer>
                  <MainTitle>응용 동작</MainTitle> 
                  <ExerciseCard
+                    img={sideLunge}
                     title="사이드 런지"
                     text1="Side Lunge"
                     text2="3set 12min"
                     navigateTo="/exercise/detail/5" 
                 />
                 <ExerciseCard
+                    img={reverseLunge}
                     title="리버스 런지"
                     text1="Reverse Lunge"
                     text2="3set 12min"
