@@ -9,6 +9,7 @@ export const ExerciseContainer = styled.div`
   width: 100%;
   margin: 0 auto;
   background-color: #F6F6F6;
+  padding-bottom: 50px;
 `;
 
 export const HeroShot = styled.div`
