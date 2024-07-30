@@ -19,7 +19,7 @@ const Header = styled.div`
   padding: 10px;
 `;
 
-const ContentContainer = styled.div`
+const Content = styled.div`
   padding: 40px;
   border-radius: 8px;
   align-items: center;
@@ -61,7 +61,7 @@ const FindpwPage = () => {
       <Header>
         <BackButton/>
       </Header>
-      <ContentContainer>
+      <Content>
         <Title>비밀번호 찾기</Title>
         <br />
         <Input
@@ -71,7 +71,7 @@ const FindpwPage = () => {
           onChange={(e) => setId(e.target.value)}
         />
         <SubmitButton onClick={handlePasswordRecovery}>완료</SubmitButton>
-      </ContentContainer>
+      </Content>
       
     </FindpwContainer>
   );
