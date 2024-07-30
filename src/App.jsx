@@ -3,7 +3,6 @@ import { GlobalStyles } from './data/styles/globalstyles';
 
 // tutorial
 import RootLayout from './components/RootLayout';
-import ExerciseLayout from './components/ExerciseLayout';
 
 import AllPage from './pages/Exercise/AllPage';
 
@@ -16,7 +15,7 @@ import ExerciseDetailPage from './components/ExerciseDetailPage';
 
 // login
 import LoginPage from './pages/Login/LoginPage';
-import ForgotPasswordPage from './pages/Login/ForgotPasswordPage';
+import ForgotPasswordPage from './pages/Login/FindpwPage';
 import SignUpPage from './pages/Login/SignUpPage';
 
 const router = createBrowserRouter([
@@ -29,30 +28,24 @@ const router = createBrowserRouter([
         index: true,
         element: <AllPage />,
       },
-    ]
-  },
-  {
-    path: 'exercise',
-    element: <ExerciseLayout />,
-    children: [
       {
-        path: 'squat',
+        path: 'exercise/squat',
         element: <SquatPage />,
       },
       {
-        path: 'lunge',
+        path: 'exercise/lunge',
         element: <LungePage />,
       },
       {
-        path: 'pushup',
+        path: 'exercise/pushup',
         element: <PushupPage />,
       },
       {
-        path: 'detail/:id', 
-        element: <ExerciseDetailPage />
-      }
+        path: 'exercise/detail/:id',
+        element: <ExerciseDetailPage />,
+      },
     ]
-  }
+  },
 ]);
 
 const router1 = createBrowserRouter([
@@ -76,7 +69,6 @@ function App() {
       <GlobalStyles/>
       <RouterProvider router={router} />
     </>
-
   );
 }
 

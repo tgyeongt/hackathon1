@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import styled, { css, keyframes } from 'styled-components';
+import styled from 'styled-components';
 
+import header from '/src/assets/header.png';
 import emptyIcon from '/src/assets/emptyheart.png';
 import fullIcon from '/src/assets/fullheart.png';
 import squat from '/src/assets/squat.png';
 import lunge from '/src/assets/lunge.png';
 import pushup from '/src/assets/pushup.png';
+import BackButton from '../../components/BackButton';
 
 const TutorialContainer = styled.div`
   display: flex;
@@ -17,6 +19,16 @@ const TutorialContainer = styled.div`
   width: 100%;
   margin: 0 auto;
   font-size: 12px;
+`;
+
+const TutorialHeader = styled.div`
+  width: 100%;
+  height: 9vh;
+  background-image: url(${header});
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
 `;
 
 const ExerciseList = styled.div`
@@ -82,6 +94,9 @@ export default function AllPage() {
 
     return (
         <TutorialContainer>
+          <TutorialHeader>
+        <BackButton/>
+      </TutorialHeader>
             <ExerciseList>
                 {exercises.map((exercise, index) => (
                     <ExerciseCard key={index}>

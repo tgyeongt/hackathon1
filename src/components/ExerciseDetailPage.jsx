@@ -1,10 +1,10 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
-import ExerciseData from '/src/data/ExerciseData';
+import { ExerciseData } from '/src/data/ExerciseData';
 import StateCard from './StateCard';
 import BackButton from './BackButton';
-// import YouTube from "react-youtube";
+import YouTube from "react-youtube";
 
 const PageContainer = styled.div`
   display: flex;
@@ -19,12 +19,16 @@ const PageContainer = styled.div`
 `;
 
 const HeaderContainer = styled.div`
-  height: 50px;
+  height: 60px;
 `;
 
 const DetailContainer = styled.div`
   width: 90%
 `;
+
+const TitleDiv = styled.div`
+  margin-top: 20px;
+`
 
 const Title = styled.span`
   font-size: 16px;
@@ -50,7 +54,6 @@ const Content = styled.p`
 
 const TestButton = styled.button`
   padding: 10px;
-  position: absolute;
   width: 150px;
   height: 38px;
   color: #FFFFFF;
@@ -63,8 +66,6 @@ const TestButton = styled.button`
   }
 
 `
-
-
 const ExerciseDetailPage = () => {
   const { id } = useParams();
   const exercise = ExerciseData.find((item) => item.id === parseInt(id));
@@ -79,8 +80,18 @@ const ExerciseDetailPage = () => {
         <BackButton/>
       </HeaderContainer>
       <DetailContainer>
-        <Title>{exercise.title} </Title>
-        <EngTitle>{exercise.engtitle}</EngTitle>
+      <YouTube
+        videoId={exercise.video}
+        opts={{
+          width: "100%",
+          height: "270px",
+        }}
+        />
+        <TitleDiv>
+          <Title>{exercise.title} </Title>
+          <EngTitle>{exercise.engtitle}</EngTitle>
+        </TitleDiv>
+        
         <CardList>
           <StateCard
             text1="시간"

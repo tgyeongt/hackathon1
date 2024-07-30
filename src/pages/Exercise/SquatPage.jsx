@@ -27,6 +27,7 @@ export default function SquatPage() {
             <BasicContainer>
                 <MainTitle>베이직</MainTitle> 
                 <ExerciseCard
+                    img={squatMain}
                     title="기본 스쿼트"
                     text1="Basic Squat"
                     text2="3set 15min"

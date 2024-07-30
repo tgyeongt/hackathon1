@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import playerbutton from '/src/assets/playerbutton.svg'
 
 const CardContainer = styled(Link)`
   width: 100%;
@@ -16,12 +17,13 @@ const CardContainer = styled(Link)`
 
 const VideoContainer = styled.div`
   width: 40%;
+  align-items: center;
+  justify-content: center;
   background-image: url(${(props) => props.img || ''});
   background-size: cover;
   background-position: center;
   border-radius: 10px;
   display: flex;
-  padding: 10px;
   box-sizing: border-box;
 `;
 
@@ -30,15 +32,22 @@ const TextContainer = styled.div`
   height: 121px;
   border-radius: 10px;
   display: flex;
-  padding: 10px;
+  flex-direction: column;
+  padding: 20px;
   box-sizing: border-box;
+`;
+
+const TitleAndText1 = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 `;
 
 const CardTitle = styled.span`
   font-size: 16px;
   font-weight: bold;
   color: #353535;
-  margin: 0;
+  margin-right: 5px;
 `;
 
 const CardContent = styled.span`
@@ -50,11 +59,13 @@ const ExerciseCard = ({ img, title, text1, text2, navigateTo }) => {
   return (
     <CardContainer to={navigateTo}>
         <VideoContainer img={img}>
-        {/* 재생버튼 */}
+          <img src={playerbutton} width={40}/>
         </VideoContainer>
       <TextContainer>
-        <CardTitle>{title}</CardTitle>
-        <CardContent>{text1}</CardContent> 
+        <TitleAndText1>
+          <CardTitle>{title}</CardTitle>
+          <CardContent>{text1}</CardContent>
+        </TitleAndText1>
         <CardContent>{text2}</CardContent>
       </TextContainer>
     </CardContainer>

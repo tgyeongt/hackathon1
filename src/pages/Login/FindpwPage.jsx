@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Input } from './LoginStyles';
 import BackButton from '../../components/BackButton';
 
-const ForgotPasswordContainer = styled.div`
+const FindpwContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 95vh;
@@ -43,7 +43,7 @@ const SubmitButton = styled.button`
   }
 `;
 
-const ForgotPasswordPage = () => {
+const FindpwPage = () => {
   const [id, setId] = useState('');
 
   const handlePasswordRecovery = () => {
@@ -53,7 +53,7 @@ const ForgotPasswordPage = () => {
   };
 
   return (
-    <ForgotPasswordContainer>
+    <FindpwContainer>
       <Header>
         <BackButton/>
       </Header>
@@ -66,8 +66,8 @@ const ForgotPasswordPage = () => {
         onChange={(e) => setId(e.target.value)}
       />
       <SubmitButton onClick={handlePasswordRecovery}>완료</SubmitButton>
-    </ForgotPasswordContainer>
+    </FindpwContainer>
   );
 };
 
-export default ForgotPasswordPage;
+export default FindpwPage;
