@@ -105,7 +105,7 @@ const ExerciseDetailPage = () => {
         <Content>{exercise.content}</Content>
         <ButtonWrapper>
           <TestButton>
-            <p>자세측정하러가기</p>
+            <p>자세 측정하러가기</p>
           </TestButton>
         </ButtonWrapper>
       </DetailContainer>
