@@ -67,7 +67,7 @@ function App() {
   return (
     <>
       <GlobalStyles/>
-      <RouterProvider router={router1} />
+      <RouterProvider router={router} />
     </>
   );
 }
