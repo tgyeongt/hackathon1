@@ -57,12 +57,12 @@ const CardContent = styled.span`
 
 const CardPrice = styled.span`
   margin-left: 10px;
-  margin-bottom: 5px;
-  padding: 0px 5px;
+  margin-bottom: 3px;
+  padding: 3px 6px;
   font-size: 10px;
   color: #A0A0A0;
   background-color: #EEEEEE;
-  border-radius: 5px;
+  border-radius: 10px;
 `;
 
 const ProductCard = ({ img, text1, text2, text3, text4, navigateTo }) => {
