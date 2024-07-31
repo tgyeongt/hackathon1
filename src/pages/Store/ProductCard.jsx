@@ -58,7 +58,7 @@ const CardContent = styled.span`
 
 const CardPrice = styled.span`
   margin-left: 10px;
-  padding: 3px 10px 4px 10px;
+  padding: 3px 10px;
   font-size: 10px;
   color: #A0A0A0;
   background-color: #EEEEEE;
