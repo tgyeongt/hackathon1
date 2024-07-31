@@ -1,6 +1,6 @@
 export const productData = [
     {
-        img: '/assets/livfit_slim_tshirts.png',
+        img: '/src/assets/livfit_slim_tshirts.png',
         text1: 'Livfit Slim T-shirts',
         text2: '리브핏 슬림 티셔츠',
         text3: '690,000 P',
@@ -8,7 +8,7 @@ export const productData = [
         navigateTo: '/product/livfit-slim-tshirts'
     },
     {
-        img: '/assets/black_label_tshirt.png',
+        img: '/src/assets/black_label_tshirt.png',
         text1: 'Black Label Signiture T-shirt',
         text2: '블랙 라벨 시그니처 티셔츠',
         text3: '890,000 P',

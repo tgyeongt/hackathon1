@@ -37,7 +37,7 @@ const CardDetails = styled.div`
 `;
 
 const CardTitle = styled.span`
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   color: #353535;
   margin-bottom: 5px;
