@@ -50,15 +50,15 @@ const CardContentWrapper = styled.div`
 `;
 
 const CardContent = styled.span`
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: bold;
   color: #353535;
   margin-bottom: 5px;
 `;
 
 const CardPrice = styled.span`
   margin-left: 10px;
-  margin-bottom: 3px;
-  padding: 3px 6px;
+  padding: 3px 10px 4px 10px;
   font-size: 10px;
   color: #A0A0A0;
   background-color: #EEEEEE;
