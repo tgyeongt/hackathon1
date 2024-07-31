@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import BackButton from '../../components/BackButton';
-import storeMain from '/src/assets/store/storemain.png';
+import storeMain from '/store/storemain.png';
 import ProductCard from './ProductCard';
 import { productData } from './ProductData';
 

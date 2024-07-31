@@ -1,6 +1,6 @@
 export const productData = [
     {
-        img: '/src/assets/store/livfit_slim_tshirts.png',
+        img: '/store/livfit_slim_tshirts.png',
         text1: 'Livfit Slim T-shirts',
         text2: '리브핏 슬림 티셔츠',
         text3: '690,000 P',
@@ -8,7 +8,7 @@ export const productData = [
         navigateTo: '/product/livfit-slim-tshirts'
     },
     {
-        img: '/src/assets/store/black_label_tshirt.png',
+        img: '/store/black_label_tshirt.png',
         text1: 'Black Label Signiture T-shirt',
         text2: '블랙 라벨 시그니처 티셔츠',
         text3: '890,000 P',
@@ -16,7 +16,7 @@ export const productData = [
         navigateTo: '/product/black-label-tshirt'
     },
     {
-        img: '/src/assets/store/yogamat.png', 
+        img: '/store/yogamat.png', 
         text1: 'Livfit Yoga Mat',
         text2: '리브핏 요가 매트',
         text3: '400,000 P',
@@ -24,7 +24,7 @@ export const productData = [
         navigateTo: '/product/purple-yoga-mat'
     },
     {
-        img: '/src/assets/store/foamroller.png', 
+        img: '/store/foamroller.png', 
         text1: 'Livfit Foam Roller',
         text2: '리브핏 폼 롤러',
         text3: '150,000 P',
@@ -32,7 +32,7 @@ export const productData = [
         navigateTo: '/product/foam-roller'
     },
     {
-        img: '/src/assets/store/waterbottle.png', 
+        img: '/store/waterbottle.png', 
         text1: 'Sports Water Bottle',
         text2: '스포츠 물병',
         text3: '180,000 P',
@@ -40,7 +40,7 @@ export const productData = [
         navigateTo: '/product/sports-water-bottle'
     },
     {
-        img: '/src/assets/store/dumbbell.png', 
+        img: '/store/dumbbell.png', 
         text1: 'Livfit Dumbbell Set',
         text2: '리브핏 덤벨 세트',
         text3: '600,000 P',
