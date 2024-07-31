@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
-import backbutton from '/src/assets/backbutton.svg';
+import backbutton from '/src/assets/backbutton-white.svg';
 
 const StyledBackButton = styled.button`
   position: absolute;

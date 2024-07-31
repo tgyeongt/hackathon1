@@ -58,6 +58,7 @@ const ButtonWrapper = styled.div`
   justify-content: center;
   width: 100%;
   margin-top: 10px;
+  padding-bottom: 50px;
 `;
 
 const TestButton = styled.button`
