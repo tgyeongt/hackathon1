@@ -30,3 +30,8 @@ export const ProductList = styled.div`
   align-items: center;
   width: 100%;
 `;
+
+export const ProductCardContainer = styled.div`
+  width: 48%; /* Two cards per row with some space between them */
+  margin-bottom: 10px; /* Space at the bottom of each card */
+`;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { StoreContainer, HeroShot, ProductList, ProductDiv } from './StoreStyles';
 import BackButton from '../../components/BackButton';
-import storeMain from '/src/assets/storemain.png';
+import storeMain from '/src/assets/store/storemain.png';
 import ProductCard from './ProductCard';
 import { productData } from './ProductData';
 
