@@ -46,6 +46,7 @@ const CardSubTitle = styled.span`
 const CardContentWrapper = styled.div`
   display: flex;
   align-items: center;
+  margin-top: 5px;
 `;
 
 const CardContent = styled.span`

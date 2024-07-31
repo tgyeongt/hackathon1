@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import BackButton from '../../components/BackButton';
-import storeMain from '/store/storemain.png';
+import storeMain from '/src/assets/store/storemain.png';
 import ProductCard from './ProductCard';
 import { productData } from './ProductData';
 
@@ -28,6 +28,7 @@ const ProductDiv = styled.div`
   width: 100%;
   border-radius: 10px;
   background-color: #FFFFFF;
+  margin-top: 5px;
 `;
 
 const ProductList = styled.div`
