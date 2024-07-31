@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 export const StoreContainer = styled.div`
   display: flex;
@@ -23,15 +23,11 @@ export const ProductDiv = styled.div`
   width: 100%;
   border-radius: 10px;
   background-color: #FFFFFF;
-`
+`;
 
 export const ProductList = styled.div`
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
-`;
-
-export const ProductCardContainer = styled.div`
-  width: 48%; /* Two cards per row with some space between them */
-  margin-bottom: 10px; /* Space at the bottom of each card */
+  justify-content: center;
 `;

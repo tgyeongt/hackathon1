@@ -1,9 +1,42 @@
 import React from 'react';
-import { StoreContainer, HeroShot, ProductList, ProductDiv } from './StoreStyles';
+import styled from 'styled-components';
 import BackButton from '../../components/BackButton';
 import storeMain from '/src/assets/store/storemain.png';
 import ProductCard from './ProductCard';
 import { productData } from './ProductData';
+
+const StoreContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 12px;
+`;
+
+const HeroShot = styled.div`
+  width: 100%;
+  & .mainImage {
+    width: 100%;
+    height: auto;
+  }
+`;
+
+const ProductDiv = styled.div`
+  width: 100%;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+`;
+
+const ProductList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+`;
+
 
 export default function Store() {
     return (

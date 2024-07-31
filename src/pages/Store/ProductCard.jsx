@@ -3,37 +3,31 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const CardContainer = styled(Link)`
-  width: 210px;
-  height: 260px;
+  width: 48%; 
+  margin-bottom: 10px;
   background-color: #FFFFFF;
   border-radius: 10px;
-  margin: 10px 5px 0px 5px;
   display: flex;
   flex-direction: column;
+  padding: 10px;
   box-sizing: border-box;
   text-decoration: none;
 `;
 
 const ProductImage = styled.div`
   width: 100%;
-  height: 60%;
-  align-items: center;
-  justify-content: center;
+  padding-top: 100%;
   background-image: url(${(props) => props.img || ''});
   background-size: cover;
   background-position: center;
-  border-radius: 10px 10px 0 0;
-  display: flex;
-  box-sizing: border-box;
+  border-radius: 10px;
 `;
 
 const CardDetails = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 10px;
-  height: 40%;
-  box-sizing: border-box;
+  justify-content: center;
+  padding: 10px 0;
 `;
 
 const CardTitle = styled.span`
@@ -44,26 +38,25 @@ const CardTitle = styled.span`
 `;
 
 const CardSubTitle = styled.span`
-  font-size: 10px;
-  color: #A0A0A0;
+  font-size: 12px;
+  color: #353535;
   margin-bottom: 5px;
 `;
 
-const ContentDiv = styled.div`
-  margin-top: 5px;
-`
-
-const CardContent1 = styled.span`
-  font-size: 12px;
-  font-weight: bold;
-  color: #353535;
+const CardContentWrapper = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
-const CardContent2 = styled.span`
-  width: 60px;
-  margin-left: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+const CardContent = styled.span`
+  font-size: 12px;
+  color: #353535;
+  margin-bottom: 5px;
+`;
+
+const CardPrice = styled.span`
+  margin-left: 10px;
+  padding: 0px 5px;
   font-size: 10px;
   color: #A0A0A0;
   background-color: #EEEEEE;
@@ -77,10 +70,10 @@ const ProductCard = ({ img, text1, text2, text3, text4, navigateTo }) => {
       <CardDetails>
         <CardTitle>{text1}</CardTitle>
         <CardSubTitle>{text2}</CardSubTitle>
-        <ContentDiv>
-          <CardContent1>{text3}</CardContent1>
-          <CardContent2>{text4}</CardContent2>
-        </ContentDiv>
+        <CardContentWrapper>
+          <CardContent>{text3}</CardContent>
+          <CardPrice>{text4}</CardPrice>
+        </CardContentWrapper>
       </CardDetails>
     </CardContainer>
   );

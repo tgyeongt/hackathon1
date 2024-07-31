@@ -17,34 +17,34 @@ export const productData = [
     },
     {
         img: '/src/assets/store/yogamat.png', 
-        text1: 'Purple Yoga Mat',
-        text2: '퍼플 요가 매트',
-        text3: '450,000 P',
-        text4: '45,000원',
+        text1: 'Livfit Yoga Mat',
+        text2: '리브핏 요가 매트',
+        text3: '400,000 P',
+        text4: '40,000원',
         navigateTo: '/product/purple-yoga-mat'
     },
     {
         img: '/src/assets/store/foamroller.png', 
-        text1: 'Foam Roller',
-        text2: '폼 롤러',
-        text3: '350,000 P',
-        text4: '35,000원',
+        text1: 'Livfit Foam Roller',
+        text2: '리브핏 폼 롤러',
+        text3: '150,000 P',
+        text4: '15,000원',
         navigateTo: '/product/foam-roller'
     },
     {
         img: '/src/assets/store/waterbottle.png', 
         text1: 'Sports Water Bottle',
         text2: '스포츠 물병',
-        text3: '150,000 P',
-        text4: '15,000원',
+        text3: '180,000 P',
+        text4: '18,000원',
         navigateTo: '/product/sports-water-bottle'
     },
     {
         img: '/src/assets/store/dumbbell.png', 
-        text1: 'Dumbbell Set',
-        text2: '덤벨 세트',
-        text3: '1,000,000 P',
-        text4: '100,000원',
+        text1: 'Livfit Dumbbell Set',
+        text2: '리브핏 덤벨 세트',
+        text3: '600,000 P',
+        text4: '60,000원',
         navigateTo: '/product/dumbbell-set'
     },
 ];
