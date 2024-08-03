@@ -1,7 +1,7 @@
 export const productData = [
     {
         brand: 'livfit',
-        img: '/public/product/livfit_tshirt.png',
+        img: 'public/product/livfit_tshirt.png',
         text1: 'Livfit Signiture T-shirt',
         text2: '리브핏 시그니처 티셔츠',
         text3: '490,000 P',
