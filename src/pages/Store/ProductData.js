@@ -1,7 +1,29 @@
+// ProductData.js
+import livfitTshirt from './product/livfit_tshirt.png';
+import croptop from './product/croptop.png';
+import foamroller from './product/foamroller.png';
+import waterbottle from './product/waterbottle.png';
+import nikeCap from './product/nike_cap.png';
+import nikeTshirt from './product/nike_tshirt.png';
+import nikeHeadband from './product/nike_headband.png';
+import nikeDuffelbag from './product/nike_duffelbag.png';
+import adidasCap from './product/adidas_cap.png';
+import adidasSocks from './product/adidas_socks.png';
+import adidasDuffelbag from './product/adidas_duffelbag.png';
+import adidasDuffelbag2 from './product/adidas_duffelbag2.png';
+import pumaCap from './product/puma_cap.png';
+import pumaShorts from './product/puma_shorts.png';
+import pumaSack from './product/puma_sack.png';
+import pumaTshirt from './product/puma_tshirt.png';
+import underarmourCap from './product/underarmour_cap.png';
+import underarmourWristband from './product/underarmour_wristband.png';
+import underarmourDuffelbag from './product/underarmour_duffelbag.png';
+import underarmourSack from './product/underarmour_sack.png';
+
 export const productData = [
     {
         brand: "livfit",
-        img: "/public/product/livfit_tshirt.png",
+        img: livfitTshirt,
         text1: "Livfit Signiture T-shirt",
         text2: "리브핏 시그니처 티셔츠",
         text3: "490,000 P",
@@ -10,7 +32,7 @@ export const productData = [
     },
     {
         brand: "livfit",
-        img: "/public/product/croptop.png",
+        img: croptop,
         text1: "Livfit Crop-top Set",
         text2: "리브핏 크롭탑 세트",
         text3: "890,000 P",
@@ -19,7 +41,7 @@ export const productData = [
     }, 
     {
         brand: "livfit",
-        img: "/public/product/foamroller.png", 
+        img: foamroller,
         text1: "Livfit Foam Roller",
         text2: "리브핏 폼 롤러",
         text3: "150,000 P",
@@ -28,7 +50,7 @@ export const productData = [
     },
     {
         brand: "livfit",
-        img: "/public/product/waterbottle.png", 
+        img: waterbottle,
         text1: "Livfit Sports Water Bottle",
         text2: "리브핏 스포츠 물병",
         text3: "180,000 P",
@@ -37,7 +59,7 @@ export const productData = [
     },
     {
         brand: "nike",
-        img: "/public/product/nike_cap.png",
+        img: nikeCap,
         text1: "Nike Sports Cap",
         text2: "나이키 드라이-핏 스우시 캡",
         text3: "350,000 P",
@@ -46,7 +68,7 @@ export const productData = [
     },
     {
         brand: "nike",
-        img: "/public/product/nike_tshirt.png",
+        img: nikeTshirt,
         text1: "Nike Dri-FIT T-shirt",
         text2: "나이키 드라이-핏 티셔츠",
         text3: "500,000 P",
@@ -55,7 +77,7 @@ export const productData = [
     },
     {
         brand: "nike",
-        img: "/public/product/nike_headband.png",
+        img: nikeHeadband,
         text1: "Nike Dri-FIT Headband",
         text2: "나이키 드라이-핏 헤어밴드",
         text3: "230,000 P",
@@ -64,7 +86,7 @@ export const productData = [
     },
     {
         brand: "nike",
-        img: "/public/product/nike_duffelbag.png",
+        img: nikeDuffelbag,
         text1: "Nike Duffel Bag",
         text2: "나이키 아카데미 팀 더플백",
         text3: "450,000 P",
@@ -73,7 +95,7 @@ export const productData = [
     },
     {
         brand: "adidas",
-        img: "/public/product/adidas_cap.png",
+        img: adidasCap,
         text1: "Adidas Performance Cap",
         text2: "아디다스 야구 캡 코튼",
         text3: "290,000 P",
@@ -82,7 +104,7 @@ export const productData = [
     },
     {
         brand: "adidas",
-        img: "/public/product/adidas_socks.png",
+        img: adidasSocks,
         text1: "Adidas Cushioned Crew Socks 3P",
         text2: "아디다스 쿠션드 크루 삭스 3P",
         text3: "190,000 P",
@@ -91,7 +113,7 @@ export const productData = [
     },
     {
         brand: "adidas",
-        img: "/public/product/adidas_duffelbag.png",
+        img: adidasDuffelbag,
         text1: "Adidas Yoga Duffel Bag",
         text2: "아디다스 요가 더플 백",
         text3: "750,000 P",
@@ -100,7 +122,7 @@ export const productData = [
     },
     {
         brand: "adidas",
-        img: "/public/product/adidas_duffelbag2.png",
+        img: adidasDuffelbag2,
         text1: "Adidas Essential 3S Duffel Bag",
         text2: "아디다스 에센셜 3S 더플 백",
         text3: "490,000 P",
@@ -109,7 +131,7 @@ export const productData = [
     },
     {
         brand: "puma",
-        img: "/public/product/puma_cap.png",
+        img: pumaCap,
         text1: "Puma Adjustable Cap",
         text2: "푸마 유니섹스 러닝 캡 III",
         text3: "290,000 P",
@@ -118,7 +140,7 @@ export const productData = [
     },
     {
         brand: "puma",
-        img: "/public/product/puma_shorts.png",
+        img: pumaShorts,
         text1: "Puma Bias Cut KNT 4\" Shorts",
         text2: "푸마 바이어스 컷 니트 4\" 반바지",
         text3: "490,000 P",
@@ -127,7 +149,7 @@ export const productData = [
     },
     {
         brand: "puma",
-        img: "/public/product/puma_sack.png",
+        img: pumaSack,
         text1: "Puma MCFC Gym Sack",
         text2: "푸마 맨체스터시티 FC 짐색",
         text3: "240,000 P",
@@ -136,7 +158,7 @@ export const productData = [
     },
     {
         brand: "puma",
-        img: "/public/product/puma_tshirt.png",
+        img: pumaTshirt,
         text1: "Puma MCFC Home Jersey Replica",
         text2: "푸마 MCFC 홈 레플리카 져지",
         text3: "1,290,000 P",
@@ -145,7 +167,7 @@ export const productData = [
     },
     {
         brand: "underarmour",
-        img: "/public/product/underarmour_cap.png",
+        img: underarmourCap,
         text1: "Under Armour Cap",
         text2: "언더아머 UA 브랜디드 캡",
         text3: "250,000 P",
@@ -154,7 +176,7 @@ export const productData = [
     },
     {
         brand: "underarmour",
-        img: "/public/product/underarmour_wristband.png",
+        img: underarmourWristband,
         text1: "Under Armour Performance Wristband",
         text2: "언더아머 UA 3인치 퍼포먼스 손목 밴드",
         text3: "100,000 P",
@@ -163,7 +185,7 @@ export const productData = [
     },
     {
         brand: "underarmour",
-        img: "/public/product/underarmour_duffelbag.png",
+        img: underarmourDuffelbag,
         text1: "Under Armour Duffel Bag",
         text2: "언더아머 UA 언디나이어블 5.0 미디엄 더플 백",
         text3: "690,000 P",
@@ -172,7 +194,7 @@ export const productData = [
     },
     {
         brand: "underarmour",
-        img: "/public/product/underarmour_sack.png",
+        img: underarmourSack,
         text1: "Under Armour Sack Pack",
         text2: "언더아머 UA 오즈씨 색팩",
         text3: "250,000 P",
