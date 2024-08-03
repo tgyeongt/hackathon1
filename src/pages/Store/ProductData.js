@@ -1,5 +1,5 @@
 // ProductData.js
-import livfitTshirt from './product/livfit_tshirt.png';
+import livfitTshirt from '@assets/product/livfit_tshirt.png';
 import croptop from './product/croptop.png';
 import foamroller from './product/foamroller.png';
 import waterbottle from './product/waterbottle.png';
