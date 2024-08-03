@@ -1,24 +1,23 @@
-// ProductData.js
-import livfitTshirt from '@assets/product/livfit_tshirt.png';
-import croptop from './product/croptop.png';
-import foamroller from './product/foamroller.png';
-import waterbottle from './product/waterbottle.png';
-import nikeCap from './product/nike_cap.png';
-import nikeTshirt from './product/nike_tshirt.png';
-import nikeHeadband from './product/nike_headband.png';
-import nikeDuffelbag from './product/nike_duffelbag.png';
-import adidasCap from './product/adidas_cap.png';
-import adidasSocks from './product/adidas_socks.png';
-import adidasDuffelbag from './product/adidas_duffelbag.png';
-import adidasDuffelbag2 from './product/adidas_duffelbag2.png';
-import pumaCap from './product/puma_cap.png';
-import pumaShorts from './product/puma_shorts.png';
-import pumaSack from './product/puma_sack.png';
-import pumaTshirt from './product/puma_tshirt.png';
-import underarmourCap from './product/underarmour_cap.png';
-import underarmourWristband from './product/underarmour_wristband.png';
-import underarmourDuffelbag from './product/underarmour_duffelbag.png';
-import underarmourSack from './product/underarmour_sack.png';
+import livfitTshirt from '/src/assets/product/livfit_tshirt.png'; // 절대 경로
+import croptop from '/src/assets/product/croptop.png'; // 절대 경로
+import foamroller from '/src/assets/product/foamroller.png'; // 절대 경로
+import waterbottle from '/src/assets/product/waterbottle.png'; // 절대 경로
+import nikeCap from '/src/assets/product/nike_cap.png'; // 절대 경로
+import nikeTshirt from '/src/assets/product/nike_tshirt.png'; // 절대 경로
+import nikeHeadband from '/src/assets/product/nike_headband.png'; // 절대 경로
+import nikeDuffelbag from '/src/assets/product/nike_duffelbag.png'; // 절대 경로
+import adidasCap from '/src/assets/product/adidas_cap.png'; // 절대 경로
+import adidasSocks from '/src/assets/product/adidas_socks.png'; // 절대 경로
+import adidasDuffelbag from '/src/assets/product/adidas_duffelbag.png'; // 절대 경로
+import adidasDuffelbag2 from '/src/assets/product/adidas_duffelbag2.png'; // 절대 경로
+import pumaCap from '/src/assets/product/puma_cap.png'; // 절대 경로
+import pumaShorts from '/src/assets/product/puma_shorts.png'; // 절대 경로
+import pumaSack from '/src/assets/product/puma_sack.png'; // 절대 경로
+import pumaTshirt from '/src/assets/product/puma_tshirt.png'; // 절대 경로
+import underarmourCap from '/src/assets/product/underarmour_cap.png'; // 절대 경로
+import underarmourWristband from '/src/assets/product/underarmour_wristband.png'; // 절대 경로
+import underarmourDuffelbag from '/src/assets/product/underarmour_duffelbag.png'; // 절대 경로
+import underarmourSack from '/src/assets/product/underarmour_sack.png'; // 절대 경로
 
 export const productData = [
     {
